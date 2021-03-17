@@ -1,0 +1,69 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+# <design>
+$HOME/.config/polybar/launch.sh
+
+feh --bg-fill ~/Pictures/Wallpapers/forest-river-bridge.jpg
+
+picom -b
+# </design>
+
+# <monitor setup>
+# script yoinked from https://protesilaos.com/codelog/multihead-bspwm-polybar/
+# and edited by bear
+# check if DP-3 (the main external monitor) is connected, if it is then set it as primary, otherwise don't
+my_laptop_external_monitor=$(xrandr --query | grep 'DP-3')
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    xrandr \
+        --output DP-3 \
+            --primary \
+            --mode 1920x1080 \
+            --fbmm 598x336 \
+            --rate 144 \
+            --rotate normal \
+        --output eDP-1-1 \
+            --mode 1920x1080 \
+            --fbmm 344x194 \
+            --rotate normal \
+            --right-of DP-3 \
+        --output HDMI-0 \
+            --mode 1920x1080 \
+            --fbmm 294x165 \
+            --rotate normal \
+            --below DP-3
+
+    bspc monitor DP-3    -d 1 2 3 4 5 6 7 8
+    bspc monitor eDP-1-1 -d 9
+    bspc monitor HDMI-0  -d 0
+else
+    xrandr \
+        --output eDP-1-1 \
+            --primary \
+            --mode 1920x1080 \
+            --fbmm 344x194 \
+            --rotate normal \
+        --output HDMI-0 \
+            --mode 1920x1080 \
+            --fbmm 294x165 \
+            --rotate normal \
+            --below eDP-1-1
+
+    bspc monitor eDP-1-1 -d 1 2 3 4 5 6 7 8
+    bspc monitor HDMI-0  -d 0
+fi
+# </monitor setup>
