@@ -1,52 +1,32 @@
-;========================================================|;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
-;========================================================|
-[colors]
-
-background = ${xrdb:color0:#151515}
-foreground = ${xrdb:color15:#fff}
-
-;  _                    
-; | |__   __ _ _ __ ___ 
-; | '_ \ / _` | '__/ __|
-; | |_) | (_| | |  \__ \
-; |_.__/ \__,_|_|  |___/
-
 [bar/bar]
-enable-ipc=true
+
+font-0 = "Iosevka:size=11;3"
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+fixed-center = true
+
+width = 100%
 height = 30
 
-background = ${colors.background}
-;background = ${colors.primary}
-foreground = ${colors.foreground}
+background = #151515
+foreground = #fff
 
-padding=0
-font-0=Iosevka:size=11;3
-font-1=IPAGothic:size=12:antialias=true;3
+radius = 0.0
 
-dpi = 100
+# line-size = 1
+# line-color = #f00
 
-modules-left =  bspwm
-modules-center = time 
-modules-right = battery pulseaudio
+# border-size = 2
+# border-color = #00ff00
+padding-left = 1
+padding-right = 1
+module-margin = 0
 
-scroll-up = bspwn-wsnext
-scroll-down = bspwn-wsprev
-
-wm-restack = bspwm
-override-redirect = false
+modules-left = bspwm 
+modules-center = date
+modules-right = cpu memory battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -63,186 +43,110 @@ inherit = bar/bar
 
 monitor = HDMI-0
 
-;                      _       _           
-;  _ __ ___   ___   __| |_   _| | ___  ___ 
-; | '_ ` _ \ / _ \ / _` | | | | |/ _ \/ __|
-; | | | | | | (_) | (_| | |_| | |  __/\__ \
-; |_| |_| |_|\___/ \__,_|\__,_|_|\___||___/
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+label = RAM %gb_used%
+label-padding =22
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:40:...%
-label-color1 = ${colors.foreground} 
-label-background = ${colors.background} 
-label-padding = 2
+[module/arch-aur-updates]
+type = custom/script
+exec = checkupdates | wc -l
+interval = 1000
+label = Updates: %output%
 
-[module/bspwm]
-type = internal/bspwm
-format = <label-state>
-format-padding = 2
-index-sort = true
-
-label-separator = " "
-label-separator-padding = 0.9
-
-lavel-focused = state
-label-focused-color = #414141
-
-enable-click = true
-reverse-scroll = false
+[module/network]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+accumulate-stats = true
+label-connected = "Net %downspeed:8%"
+format-connected = <label-connected>
 
 [module/cpu]
 type = internal/cpu
-interval = 2
-format-prefix = "CPU "
-format-padding = 2
-format-foreground = ${colors.foreground}
-label = %percentage%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-padding = 2
-format-prefix = "MEM "
-format-foreground = ${colors.foreground}
-label = %percentage_used%%
-
-[module/wlan]
-type = internal/network
-interface = wlp0s20u1
-interval = 3.0
-
-format-connected =  <label-connected>
-label-connected = %essid%
-label-connected-color1 = ${colors.foreground}
-
-;format-disconnected =
-format-disconnected = <label-disconnected>
-label-disconnected = %ifname% disconnected
-label-disconnected-color1 = ${colors.foreground}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-color1 = ${colors.foreground}
-
-[module/time]
-type = internal/date
-interval = 10
-format-padding = 3
-
-time = "%H:%M"
-date = "%A %d %b"
-
-label = %date%, %time%
+interval = 0.5
+format = <label>
+label = "CPU %percentage%%"
 label-padding = 2
 
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume-padding = 2
-format-volume = <ramp-volume><label-volume>
-label-volume = %percentage:4:4%%
-use-ui-max = false
-interval = 1
-
-ramp-volume-0 = "VOL"
-ramp-volume-1 = "VOL"
-ramp-volume-2 = "VOL"
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-format-prefix = "TEMP "
-format-padding = 2
-format = <label>
-
-label = %temperature-c%
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-format-margin = 0
-format-background = ${colors.background}
-format-foreground = ${colors.foreground}
-format-padding = 2
-
-label-open = 
-label-close = 
-label-separator = |
-
-; reboot
-menu-0-1 = 
-menu-0-1-exec = menu-open-2
-; poweroff
-menu-0-2 = 
-menu-0-2-exec = menu-open-3
-; logout
-menu-0-0 = 
-menu-0-0-exec = menu-open-1
-
-menu-2-0 = 
-menu-2-0-exec = reboot
-
-menu-3-0 = 
-menu-3-0-exec = poweroff
-
-menu-1-0 = 
-menu-1-0-exec = i3-msg exit || openbox --exit
+[module/alsa]
+type = internal/alsa
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+master-mixer = Master
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+headphone-id = 9
+mapped = true
+interval = 5
+format-volume = Vol <label-volume>
+;format-Volume-padding = 1
+label-muted = muted
+label-muted-foreground = #66
 
 [module/battery]
 type = internal/battery
-full-at = 100
-time-format = %H:%M
+full-at = 99
 battery = BAT0
-adapter = ADP0
-format-charging = <animation-charging> <label-charging>
-label = %percentage%
-label-charging = %percentage%%
-format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percentage%%
-format-full = <label-full>
+adapter = ADP1
+poll-interval = 5
+time-format = %H:%M
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-charging = "BAT %percentage%%"
+label-charging-foreground = #1DB954
+label-charging-padding = 1
+label-discharging = "BAT %percentage%%"
+label-discharging-padding = 1
+label-full = Fully charged
+label-full-padding = 1
 
-format-charging-underline = ${colors.foreground}
-format-discharging-underline = ${colors.foreground}
-format-full-prefix = "BAT "
-ramp-capacity-0 = "BAT "
-ramp-capacity-1 = "BAT "
-ramp-capacity-2 = "BAT "
-ramp-capacity-3 = "BAT "
-ramp-capacity-4 = "BAT "
+[module/bspwm]
+strip-wsnumbers = true
+type = internal/bspwm
+format = <label-state> <label-mode>
 
-ramp-capacity-0-foreground = ${colors.foreground}
-ramp-capacity-foreground   = ${colors.foreground}
-bar-capacity-width = 10
+;label-focused = %index%
+label-focused-foreground = #414141
+;label-focused-background = #1d1f21
+;label-focused-underline = #fba922
+;label-focused-padding = 1
 
-animation-charging-0 = "BAT "
-animation-charging-1 = "BAT "
-animation-charging-2 = "BAT "
-animation-charging-3 = "BAT "
-animation-charging-4 = "BAT "
+label-unfocused = %index%
+label-unfocused-padding = 1
 
-animation-charging-framerate = 750
+label-visible = %index%
+label-visible-underline = #555555
+label-visible-padding = 1
 
-label-font = 1
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 1
 
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = true
+[module/date]
+type = internal/date
+interval = 1.0
+date = %A, %d %B %I:%M %p
 
-[global/wm]
-margin-top = 0
-margin-bottom = 0
+# [module/github]
+# type = internal/github
 
-; vim:ft=dosini
+# ; Accessing an access token stored in file
+# token = ${file:/path/to/file/containing/github/access.token}
+
+# ; Accessing an access token stored in an environment variable
+# token = ${env:GITHUB_ACCESS_TOKEN}
+
+# ; Whether empty notifications should be displayed or not
+# empty-notifications = false
+
+[module/title]
+type = internal/xwindow
+# format-background = #f00
+format-foreground = #f0c674
+format-padding = 1
+label-maxlen = 50
