@@ -48,7 +48,7 @@ type = internal/memory
 interval = 3
 format = <label>
 label = RAM %gb_used%
-label-padding =22
+label-padding = 2
 
 [module/arch-aur-updates]
 type = custom/script

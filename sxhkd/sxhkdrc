@@ -7,8 +7,8 @@ super + Return
 	kitty
 
 # program launcher
-super + shift + {i,o,p}
-    rofi -show {run,drun,window} -theme $HOME/rofi-collection/minimal/minimal.rasi
+super + shift + o
+    rofi -show drun -theme $HOME/rofi-collection/minimal/minimal.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -12,7 +12,7 @@ bspc config gapless_monocle      true
 # <design>
 $HOME/.config/polybar/launch.sh
 
-feh --bg-fill $HOME/Pictures/Wallpapers/forest-river-bridge.jpg
+feh --bg-fill $HOME/Documents/Wallpapers/Mountain.png
 
 picom -b
 # </design>
@@ -50,14 +50,8 @@ else
             --primary \
             --mode 1920x1080 \
             --fbmm 344x194 \
-            --rotate normal \
-        --output HDMI-0 \
-            --mode 1920x1080 \
-            --fbmm 294x165 \
-            --rotate normal \
-            --below eDP-1-1
+            --rotate normal
 
     bspc monitor eDP-1-1 -d 1 2 3 4 5 6 7 8
-    bspc monitor HDMI-0  -d 0
 fi
 # </monitor setup>
