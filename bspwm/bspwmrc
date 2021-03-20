@@ -8,14 +8,10 @@ bspc config window_gap          12
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
-# <design>
-$HOME/.config/polybar/launch.sh
-
-feh --bg-fill $HOME/Documents/Wallpapers/Mountain.png
-
-picom -b
-# </design>
+    
+bspc monitor DP-3    -d 1 2 3 4
+bspc monitor eDP-1-1 -d 5 6 7 8
+bspc monitor HDMI-0  -d 9 8
 
 # <monitor setup>
 # script yoinked from https://protesilaos.com/codelog/multihead-bspwm-polybar/
@@ -40,10 +36,6 @@ if [[ $my_laptop_external_monitor = *connected* ]]; then
             --fbmm 294x165 \
             --rotate normal \
             --below DP-3
-
-    bspc monitor DP-3    -d 1 2 3 4 5 6 7 8
-    bspc monitor eDP-1-1 -d 9
-    bspc monitor HDMI-0  -d 0
 else
     xrandr \
         --output eDP-1-1 \
@@ -51,7 +43,13 @@ else
             --mode 1920x1080 \
             --fbmm 344x194 \
             --rotate normal
-
-    bspc monitor eDP-1-1 -d 1 2 3 4 5 6 7 8
 fi
 # </monitor setup>
+
+# <design>
+$HOME/.config/polybar/launch.sh &
+
+feh --bg-fill $HOME/Dropbox/Media/Wallpapers/Mountain.png
+
+picom -b
+# </design>
