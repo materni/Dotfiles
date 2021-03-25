@@ -51,8 +51,8 @@ $HOME/.config/polybar/launch.sh &
 
 picom -b
 
-feh --bg-fill $HOME/Dropbox/Media/Wallpapers/Mountain.png &
-wal -t -q -i $HOME/Dropbox/Media/Wallpapers/Mountain.png
+feh --bg-fill $HOME/Dropbox/Media/Wallpapers/Wolf.png &
+wal -t -q -i $HOME/Dropbox/Media/Wallpapers/Wolf.png
 
 . "${HOME}/.cache/wal/colors.sh"
 
