@@ -51,7 +51,7 @@ type = internal/memory
 interval = 3
 format = <label>
 label = RAM %gb_used%
-label-padding = 2
+label-padding = 1
 
 [module/arch-aur-updates]
 type = custom/script
@@ -72,7 +72,7 @@ type = internal/cpu
 interval = 0.5
 format = <label>
 label = "CPU %percentage%%"
-label-padding = 2
+label-padding = 1
 
 [module/alsa]
 type = internal/alsa
@@ -99,12 +99,13 @@ poll-interval = 5
 time-format = %H:%M
 format-charging = <label-charging>
 format-discharging = <label-discharging>
+format-full = <label-full>
 label-charging = "BAT %percentage%%"
 label-charging-foreground = #1DB954
 label-charging-padding = 1
 label-discharging = "BAT %percentage%%"
 label-discharging-padding = 1
-label-full = Fully charged
+label-full = "BAT %percentage%%"
 label-full-padding = 1
 
 [module/bspwm]
