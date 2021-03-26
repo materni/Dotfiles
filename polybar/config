@@ -29,7 +29,7 @@ module-margin = 0
 
 modules-left = bspwm 
 modules-center = date
-modules-right = cpu memory battery
+modules-right = title cpu memory battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -145,6 +145,6 @@ date = %A, %d %B %I:%M %p
 [module/title]
 type = internal/xwindow
 # format-background = #f00
-format-foreground = #f0c674
+format-foreground = #414141
 format-padding = 1
 label-maxlen = 50
