@@ -1,6 +1,9 @@
 [bar/bar]
 
 font-0 = "Iosevka:size=11;3"
+font-1 = FontAwesome5Free:style=Solid:size=10;4
+font-2 = FontAwesome5Free:style=Regular:size=10;4
+font-3 = FontAwesome5Brands:style=Regular:size=10;4
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -105,27 +108,22 @@ label-full = Fully charged
 label-full-padding = 1
 
 [module/bspwm]
-strip-wsnumbers = true
 type = internal/bspwm
-format = <label-state> <label-mode>
+format = <label-state>
+index-sort = true
 
-;label-focused = %index%
-label-focused-foreground = #414141
-;label-focused-background = #1d1f21
-;label-focused-underline = #fba922
-;label-focused-padding = 1
+enable-click = true
+reverse-scroll = false
 
-label-unfocused = %index%
-label-unfocused-padding = 1
+label-focused = 
+label-focused-padding = 1
 
-label-visible = %index%
-label-visible-underline = #555555
-label-visible-padding = 1
+label-occupied = 
+label-occupied-padding = 1
 
-label-urgent = %index%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-label-urgent-padding = 1
+
+label-empty = 
+label-empty-padding = 1
 
 [module/date]
 type = internal/date
