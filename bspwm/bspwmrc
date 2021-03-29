@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -47,14 +47,15 @@ fi
 # </monitor setup>
 
 # <design>
-$HOME/.config/polybar/launch.sh &
+xsetroot -cursor_name left_ptr &
 
-picom -b
-
-feh --bg-fill $HOME/Dropbox/Media/Wallpapers/Wolf.png &
-wal -t -q -i $HOME/Dropbox/Media/Wallpapers/Wolf.png
+picom --no-fading-openclose &
+feh --bg-fill $HOME/Pictures/Wallpapers/Wolf.png &
+wal -t -q -i $HOME/Pictures/Wallpapers/Wolf.png
 
 . "${HOME}/.cache/wal/colors.sh"
+
+$HOME/.config/polybar/launch.sh &
 
 # <color>
 bspc config normal_border_color "$color1"

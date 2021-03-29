@@ -9,6 +9,10 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
+
 set t_Co=256
 let &t_ut=''
 set notermguicolors
