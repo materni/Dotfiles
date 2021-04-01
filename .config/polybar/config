@@ -1,9 +1,6 @@
 [bar/bar]
 
 font-0 = "Iosevka:size=11;3"
-font-1 = FontAwesome5Free:style=Solid:size=10;4
-font-2 = FontAwesome5Free:style=Regular:size=10;4
-font-3 = FontAwesome5Brands:style=Regular:size=10;4
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -29,7 +26,7 @@ module-margin = 0
 
 modules-left = bspwm 
 modules-center = date
-modules-right = title cpu memory battery
+modules-right = title memory cpu battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -116,14 +113,14 @@ index-sort = true
 enable-click = true
 reverse-scroll = false
 
-label-focused = 
+label-focused = 
 label-focused-padding = 1
 
-label-occupied = 
+label-occupied = 
 label-occupied-padding = 1
 
 
-label-empty = 
+label-empty = 
 label-empty-padding = 1
 
 [module/date]

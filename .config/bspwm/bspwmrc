@@ -48,11 +48,9 @@ fi
 
 # <design>
 xsetroot -cursor_name left_ptr &
-
 picom --no-fading-openclose &
-feh --bg-fill $HOME/Pictures/Wallpapers/Wolf.png &
-wal -t -q -i $HOME/Pictures/Wallpapers/Wolf.png
-
+feh --bg-fill $HOME/Dropbox/Media/Wallpapers/fox.jpg &
+wal -t -q -i $HOME/Dropbox/Media/Wallpapers/fox.jpg
 . "${HOME}/.cache/wal/colors.sh"
 
 $HOME/.config/polybar/launch.sh &
