@@ -126,7 +126,7 @@ label-empty-padding = 1
 [module/date]
 type = internal/date
 interval = 1.0
-date = %d %B %I:%M %p
+date = %A, %d %B %I:%M %p
 
 # [module/github]
 # type = internal/github
