@@ -46,17 +46,19 @@ else
     
     bspc monitor eDP-1-1 -d 1 2 3 4
 fi
+
+xrandr --dpi 96
 # </monitor setup>
 
 # <design>
 xsetroot -cursor_name left_ptr &
-# picom --no-fading-openclose &
 feh --bg-fill $HOME/Dropbox/Media/Wallpapers/fox.jpg &
 wal -t -q -i $HOME/Dropbox/Media/Wallpapers/fox.jpg
 . "${HOME}/.cache/wal/colors.sh"
 
 $HOME/.config/polybar/launch.sh &
 
+picom --config $HOME/.config/picom/picom.conf
 # <color>
 bspc config normal_border_color "$color1"
 bspc config active_border_color "$color2"
