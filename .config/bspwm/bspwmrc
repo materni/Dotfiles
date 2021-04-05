@@ -48,14 +48,16 @@ else
 fi
 
 xrandr --dpi 96
+# </monitor setup>
 
+# <tablet setup>
 MONITOR="HDMI-0"
 PAD_NAME='Tablet Monitor'
 
 ID_STYLUS=`xinput | grep -m 1 "Tablet Monitor stylus" | cut -d '=' -f 2 | cut -f 1`
 
 xinput map-to-output $ID_STYLUS $MONITOR
-# </monitor setup>
+# </tablet setup>
 
 # <design>
 xsetroot -cursor_name left_ptr &
