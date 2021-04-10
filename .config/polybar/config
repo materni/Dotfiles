@@ -25,8 +25,8 @@ padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-center = 
-modules-right = battery date
+modules-center = date
+modules-right = memory cpu battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -99,11 +99,11 @@ format-discharging = <label-discharging>
 format-full = <label-full>
 label-charging = "BAT %percentage%%"
 label-charging-foreground = #1DB954
-label-charging-padding = 2
+label-charging-padding = 1
 label-discharging = "BAT %percentage%%"
-label-discharging-padding = 2
+label-discharging-padding = 1
 label-full = "BAT %percentage%%"
-label-full-padding = 2
+label-full-padding = 1
 
 [module/bspwm]
 type = internal/bspwm
@@ -127,7 +127,6 @@ label-empty-padding = 1
 type = internal/date
 interval = 1.0
 date = %A, %d %B %I:%M %p
-
 # [module/github]
 # type = internal/github
 
