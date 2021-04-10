@@ -61,8 +61,8 @@ xinput map-to-output $ID_STYLUS $MONITOR
 
 # <design>
 xsetroot -cursor_name left_ptr &
-feh --bg-fill $HOME/Dropbox/Media/Wallpapers/fox.jpg &
-wal -t -q -i $HOME/Dropbox/Media/Wallpapers/fox.jpg
+feh --bg-fill $HOME/Documents/git-projects/dotfiles/wallpapers/alena-aenami-atlast2k2.jpg
+wal -t -q -i $HOME/Documents/git-projects/dotfiles/wallpapers/alena-aenami-atlast2k2.jpg
 . "${HOME}/.cache/wal/colors.sh"
 
 $HOME/.config/polybar/launch.sh &
