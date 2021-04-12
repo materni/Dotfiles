@@ -14,6 +14,7 @@ set directory=~/.config/nvim/.swp//
 set t_Co=256
 let &t_ut=''
 
+" NERDTree settings
 nmap <F6> :NERDTreeToggle<CR>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
@@ -48,14 +49,15 @@ function! TermToggle(height)
 endfunction
 
 " Toggle terminal on/off (neovim)
-nnoremap <A-t> :call TermToggle(12)<CR>
-inoremap <A-t> <Esc>:call TermToggle(12)<CR>
-tnoremap <A-t> <C-\><C-n>:call TermToggle(12)<CR>
+nnoremap <F5> :call TermToggle(12)<CR>
+inoremap <F5> <Esc>:call TermToggle(12)<CR>
+tnoremap <F5> <C-\><C-n>:call TermToggle(12)<CR>
 
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
 
+" Plugins (vim-plug)
 call plug#begin('~/.vim/plugged')
 
   Plug 'itchyny/lightline.vim'
@@ -68,6 +70,7 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
+" Colorscheme
 colorscheme wal
 
 let g:lightline = {
