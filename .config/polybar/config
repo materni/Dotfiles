@@ -1,5 +1,4 @@
 [bar/bar]
-
 font-0 = "Iosevka:size=11;3"
 
 scroll-up = i3wm-wsnext
@@ -26,7 +25,7 @@ module-margin = 0
 
 modules-left = bspwm title
 modules-center = date
-modules-right = memory cpu battery
+modules-right = pulseaudio memory cpu battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -146,3 +145,11 @@ format-foreground = #414141
 label-empty = Desktop
 format-padding = 1
 label-maxlen = 50
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume-padding = 1
+format-volume = <label-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
