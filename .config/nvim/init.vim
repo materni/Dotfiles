@@ -57,6 +57,12 @@ tnoremap <F5> <C-\><C-n>:call TermToggle(12)<CR>
 tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
 
+" Focus the panel when opening it
+let g:tagbar_autofocus = 1" Highlight the active tag
+let g:tagbar_autoshowtag = 1" Make panel vertical and place on the right
+let g:tagbar_position = 'botright vertical'" Mapping to open and close the panel
+nmap <F7> :TagbarToggle<CR>
+
 " Plugins (vim-plug)
 call plug#begin('~/.vim/plugged')
 
@@ -67,6 +73,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   Plug 'dylanaraps/wal.vim'
+  Plug 'preservim/tagbar'
 
 call plug#end()
 
