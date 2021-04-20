@@ -150,6 +150,9 @@ label-maxlen = 50
 type = internal/pulseaudio
 
 format-volume-padding = 1
+format-muted-padding = 1
 format-volume = <label-volume>
 label-volume = VOL %percentage%%
+label-muted = muted
+label-muted-foreground = #414141
 label-volume-foreground = ${root.foreground}

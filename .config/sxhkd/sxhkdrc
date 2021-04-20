@@ -19,12 +19,15 @@ Print
 	flameshot gui
 
 # brightness
+super + {F6, F5}
+    brightnessctl set 10%{+,-}
 
-super + F6
-	brightnessctl -inc 5+
+# Changing the Volume
+super + {F3, F2}
+    pulsemixer --change-volume {+,-}10
 
-super + F5
-	brightnessctl -dec 5
+super + F1
+	pulsemixer --toggle-mute
 
 #
 # bspwm hotkeys
