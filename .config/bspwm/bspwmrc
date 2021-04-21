@@ -1,5 +1,4 @@
 #!/bin/sh
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc config border_width         2
@@ -10,9 +9,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # <monitor setup>
-# script yoinked from https://protesilaos.com/codelog/multihead-bspwm-polybar/
-# and edited by bear
-# check if DP-3 (the main external monitor) is connected, if it is then set it as primary, otherwise don't
 my_laptop_external_monitor=$(xrandr --query | grep 'DP-3')
 if [[ $my_laptop_external_monitor = *connected* ]]; then
     xrandr \
@@ -66,11 +62,4 @@ feh --bg-fill $HOME/Dropbox/Media/Wallpapers/Mountain.png
 $HOME/.config/polybar/launch.sh &
 
 picom --config $HOME/.config/picom/picom.conf
-
-# <color>
-bspc config normal_border_color "$color1"
-bspc config active_border_color "$color2"
-bspc config focused_border_color "$color15"
-bspc config presel_feedback_color "$color1"
-# </color>
 # </design>
