@@ -47,13 +47,14 @@ type = internal/memory
 interval = 3
 format = <label>
 label = RAM %gb_used%
-label-padding = 1
+label-padding = 1.5
 
 [module/arch-aur-updates]
 type = custom/script
 exec = checkupdates | wc -l
 interval = 1000
 label = Updates: %output%
+label-padding = 1.5
 
 [module/network]
 type = internal/network
@@ -68,7 +69,7 @@ type = internal/cpu
 interval = 0.5
 format = <label>
 label = "CPU %percentage%%"
-label-padding = 1
+label-padding = 1.5
 
 [module/alsa]
 type = internal/alsa
@@ -96,11 +97,14 @@ time-format = %H:%M
 format-charging = <label-charging>
 format-discharging = <label-discharging>
 format-full = <label-full>
+
 label-charging = "BAT %percentage%%"
 label-charging-foreground = #1DB954
 label-charging-padding = 1
+
 label-discharging = "BAT %percentage%%"
 label-discharging-padding = 1
+
 label-full = "BAT %percentage%%"
 label-full-padding = 1
 
@@ -149,8 +153,8 @@ label-maxlen = 50
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume-padding = 1
-format-muted-padding = 1
+format-volume-padding = 1.5
+format-muted-padding = 1.5
 format-volume = <label-volume>
 label-volume = VOL %percentage%%
 label-muted = muted

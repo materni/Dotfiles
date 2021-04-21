@@ -15,7 +15,7 @@ set t_Co=256
 let &t_ut=''
 
 " NERDTree settings
-nmap <F6> :NERDTreeToggle<CR>
+nmap <F5> :NERDTreeToggle<CR>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
@@ -49,9 +49,9 @@ function! TermToggle(height)
 endfunction
 
 " Toggle terminal on/off (neovim)
-nnoremap <F5> :call TermToggle(12)<CR>
-inoremap <F5> <Esc>:call TermToggle(12)<CR>
-tnoremap <F5> <C-\><C-n>:call TermToggle(12)<CR>
+nnoremap <F6> :call TermToggle(12)<CR>
+inoremap <F6> <Esc>:call TermToggle(12)<CR>
+tnoremap <F6> <C-\><C-n>:call TermToggle(12)<CR>
 
 " Terminal go back to normal mode
 tnoremap <Esc> <C-\><C-n>
@@ -72,14 +72,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'dylanaraps/wal.vim'
   Plug 'preservim/tagbar'
+  Plug 'morhetz/gruvbox'
 
 call plug#end()
 
 " Colorscheme
-colorscheme wal
+colorscheme gruvbox
 
 let g:lightline = {
-  \ 'colorscheme': 'wal',
+  \ 'colorscheme': 'gruvbox',
   \ }
+
+highlight Normal     ctermbg=NONE guibg=NONE
+highlight LineNr     ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
