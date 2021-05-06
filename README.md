@@ -1,38 +1,38 @@
 ## Packages used for TWM-setup
 
-BSPWM          # Window Manager
+BSPWM - Window Manager
 
-SXHKD           # Keybinds
+SXHKD - Keybinds
 
-DUNST           # Notifications
+DUNST - Notifications
 
-Kitty                # Terminal Emulator
+Kitty - Terminal Emulator
 
-Nvim               # Editor
+Nvim - Editor
 
-Rofi                 # Application Launcher
+Rofi - Application Launcher
 
-Htop                # Process viewer
+Htop - Process viewer
 
-Picom              # Compositor
+Picom - Compositor
 
-Polybar            # Status Bar
+Polybar - Status Bar
 
-Ranger            # File manager
+Ranger - File manager
 
-Zathura           # PDF Reader
+Zathura - PDF Reader
 
-Firfox              # Browser
+Firfox - Browser
 
-Doas               # Replacement for sudo
+Doas - Replacement for sudo
 
-Joplin              # Note application
+Joplin - Note application
 
-Flameshot      # Screenshot tool
+Flameshot - Screenshot tool
 
-Xorg-xinit        # Launch X11 display server
+Xorg-xinit - Launch X11 display server
 
-Plata-noir-dark      #GTK-theme
+Plata-noir-dark - GTK-theme
 
 ### Yay is used for the AUR
 
@@ -49,3 +49,5 @@ joplin-desktop
 polybar
 
 opendoas
+
+plata-noir
