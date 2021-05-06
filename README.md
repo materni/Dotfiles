@@ -32,6 +32,8 @@ Flameshot      # Screenshot tool
 
 Xorg-xinit        # Launch X11 display server
 
+Plata-noir-dark      #GTK-theme
+
 ### Yay is used for the AUR
 
 https://github.com/Jguer/yay
