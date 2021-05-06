@@ -4,7 +4,7 @@ BSPWM - Window Manager
 
 SXHKD - Keybinds
 
-DUNST - Notifications
+Dunst - Notifications
 
 Kitty - Terminal Emulator
 
