@@ -34,6 +34,8 @@ Xorg-xinit - Launch X11 display server
 
 Plata-noir-dark - GTK-theme
 
+nerd-fonts-iosevka
+
 ### Yay is used for the AUR
 
 https://github.com/Jguer/yay
