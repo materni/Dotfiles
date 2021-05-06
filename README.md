@@ -22,7 +22,7 @@ Ranger - File manager
 
 Zathura - PDF Reader
 
-Firfox - Browser
+Firefox - Browser
 
 Doas - Replacement for sudo
 
