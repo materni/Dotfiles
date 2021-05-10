@@ -1,5 +1,11 @@
 config.load_autoconfig(False)
 
+config.bind('<Ctrl-Shift-p>', 'hint links spawn --verbose --detach /home/maren/dotfiles/i3/script/fillplaylist.sh push {hint-url}')
+
+config.bind('<Ctrl-Shift-o>', 'spawn --verbose --detach /home/maren/dotfiles/i3/script/fillplaylist.sh play')
+
+config.bind('<Ctrl-Shift-d>', 'hint links spawn --verbose --detach mpv {hint-url} --input-ipc-server=/tmp/mpvsocket')
+
 c.url.searchengines = {
     'DEFAULT':  'https://google.com/search?hl=en&q={}',
     '!a':       'https://www.amazon.com/s?k={}',
