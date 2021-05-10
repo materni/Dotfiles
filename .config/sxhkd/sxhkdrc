@@ -4,17 +4,21 @@
 
 # terminal emulator
 super + Return
-	kitty
+	alacritty
 
 # program launcher
 super +  space
     rofi -show drun -theme $HOME/.config/rofi/material.rasi
 
+# open qutebrowser
+super + q
+	qutebrowser
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Screenshot 
+# screenshot 
 Print
 	flameshot gui
 
@@ -22,7 +26,7 @@ Print
 super + {F6, F5}
     brightnessctl set 10%{+,-}
 
-# Changing the Volume
+# changing the Volume
 super + {F3, F2}
     pulsemixer --change-volume {+,-}10
 
