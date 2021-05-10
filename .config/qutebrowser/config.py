@@ -6,6 +6,8 @@ config.bind('<Ctrl-Shift-o>', 'spawn --verbose --detach /home/maren/dotfiles/i3/
 
 config.bind('<Ctrl-Shift-d>', 'hint links spawn --verbose --detach mpv {hint-url} --input-ipc-server=/tmp/mpvsocket')
 
+config.bind('<Ctrl-o>', 'open -t')
+
 c.url.searchengines = {
     'DEFAULT':  'https://google.com/search?hl=en&q={}',
     '!a':       'https://www.amazon.com/s?k={}',
