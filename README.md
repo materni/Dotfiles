@@ -22,7 +22,7 @@ Ranger - File manager
 
 Zathura - PDF Reader
 
-Firefox - Browser
+Qutebrowser - Browser
 
 Doas - Replacement for sudo
 
@@ -42,7 +42,7 @@ https://github.com/Jguer/yay
 
 ### One line install for non-AUR programs
 
-pacman -S xorg-server xorg-xinit bspwm sxhkd git kitty neovim rofi htop picom ranger zathura zathura-pdf-poppler firefox flameshot dunst
+pacman -S xorg-server xorg-xinit bspwm sxhkd git kitty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
 
 ### Packages installed with the AUR
 
