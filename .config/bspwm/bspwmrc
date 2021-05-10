@@ -59,9 +59,7 @@ xinput map-to-output $ID_STYLUS $MONITOR
 
 # <design>
 xsetroot -cursor_name left_ptr &
-feh --bg-fill $HOME/git-projects/Dotfiles/fjaldes.jpg
+feh --bg-fill $HOME/git-projects/Dotfiles/alena-aenami-serenity-1k.jpg
 
 $HOME/.config/polybar/launch.sh &
-
-picom --config $HOME/.config/picom/picom.conf
 # </design>
