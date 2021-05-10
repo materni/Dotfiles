@@ -1,20 +1,21 @@
 configuration {
-  display-run: " ";
-  display-drun: "  ";
-  display-window: "  ";
-  drun-display-format: "{icon} {name}";
-  font: "Iosevka 11";
+  display-run: ":: ";
+  display-drun: ":: ";
+  display-window: ":: ";
+  drun-display-format: "{name}";
+  font: "Iosevka Nerd Font Medium 12";
   modi: "window,run,drun";
-  show-icons: true;
+  show-icons: false;
 }
 
 * {
-  bg: #181818;
-  bg-alt: #232323;
 
-  fg: #FFFFFF;
-  fg-alt: #424242;
-  
+  bg: #181818;
+  bg-alt: #414141;
+
+  fg: #ffffff;
+  fg-alt: #f5f5f5;
+
   background-color: @bg;
   
   border: 0;
@@ -25,12 +26,8 @@ configuration {
 
 element {
   padding: 12;
-  orientation: horizontal;
-  text-color: @fg-alt;
-}
-
-element-icon {
-  size: 0.8em;
+  orientation: vertical;
+  text-color: @bg-alt;
 }
 
 element selected {
@@ -38,34 +35,30 @@ element selected {
 }
 
 entry {
-  background-color: @bg-alt;
-  padding: 12;
+  padding: 12 0 12 3;
   text-color: @fg;
 }
 
 inputbar {
-  children: [entry];
+  children: [prompt, entry];
 }
 
 listview {
-  background-color: @bg;
   columns: 1;
   lines: 8;
 }
 
 mainbox {
-  background-color: @bg;
   children: [inputbar, listview];
 }
 
 prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  font: "FontAwesome 12";
   padding: 12 0 0 12;
   text-color: @fg;
 }
 
 window {
+  border: 2;
+  border-color: @bg-alt;
   transparency: "real";
 }
