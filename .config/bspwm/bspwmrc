@@ -8,10 +8,15 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+# <border color>
 bspc config active_border_color #E84F4F
 bspc config normal_border_color #d8d8d8
+# </border color>
 
-bspc rule -a Zathura state=tiled
+# <BSPWM rules>
+bspc rule -a Zathura    state=tiled
+bspc rule -a mpv        state=floating
+# </BSPWM rules>
 
 # <monitor setup>
 my_laptop_external_monitor=$(xrandr --query | grep 'DP-3')
