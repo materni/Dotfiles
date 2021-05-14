@@ -11,8 +11,7 @@ set undodir=~/.config/nvim/.undo//
 set backupdir=~/.config/nvim/.backup//
 set directory=~/.config/nvim/.swp//
 
-set t_Co=256
-let &t_ut=''
+set termguicolors
 
 " NERDTree settings
 nmap <F5> :NERDTreeToggle<CR>
@@ -73,15 +72,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   Plug 'preservim/tagbar'
-  Plug 'morhetz/gruvbox'
+  Plug 'chriskempson/base16-vim'
+  Plug 'daviesjamie/vim-base16-lightline'
 
 call plug#end()
 
 " Colorscheme
-colorscheme gruvbox
+colorscheme base16-default-dark
 
 let g:lightline = {
-  \ 'colorscheme': 'gruvbox',
+  \ 'colorscheme': 'base16',
   \ }
 
 highlight Normal     ctermbg=NONE guibg=NONE
