@@ -3,7 +3,7 @@
 #define fg		#ffffff
 #define bg		#181818
 #define gray	#414141
-#define font1 Iosevka Nerd Font:style=Regular
+#define font1 Inconsolata Nerd Font:style=Regular
 
 !--dmenu settings------------------------
 
