@@ -43,10 +43,12 @@ pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop pico
 ### Yay install
 https://github.com/Jguer/yay
 
+´´´
 pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+´´´
 
 To work with doas:
 yay --sudo doas --sudoflags -- --save
