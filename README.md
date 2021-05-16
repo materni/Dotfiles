@@ -36,10 +36,6 @@ Plata-noir-dark - GTK-theme
 
 nerd-fonts-iosevka
 
-### Yay is used for the AUR
-
-https://github.com/Jguer/yay
-
 ### One line install for non-AUR programs
 
 pacman -S xorg-server xorg-xinit bspwm sxhkd git kitty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
