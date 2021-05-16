@@ -6,7 +6,7 @@ SXHKD - Keybinds
 
 Dunst - Notifications
 
-Kitty - Terminal Emulator
+Alacritty - Terminal Emulator
 
 Nvim - Editor
 
@@ -38,7 +38,7 @@ nerd-fonts-iosevka
 
 ### One line install for non-AUR programs
 
-pacman -S xorg-server xorg-xinit bspwm sxhkd git kitty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
+pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
 
 ### Yay install
 https://github.com/Jguer/yay
