@@ -44,6 +44,17 @@ https://github.com/Jguer/yay
 
 pacman -S xorg-server xorg-xinit bspwm sxhkd git kitty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
 
+### Yay install
+https://github.com/Jguer/yay
+
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+To work with doas:
+yay --sudo doas --sudoflags -- --save
+
 ### Packages installed with the AUR
 
 joplin-desktop
