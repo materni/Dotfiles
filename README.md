@@ -78,12 +78,25 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 ### ZSH/oh-my-ZSH addons
 Install oh-my-zsh with curl:
+```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 Using "gentoo" terminal style
 
 zsh-syntax-highlighting:
-https://github.com/zsh-users/zsh-syntax-highlighting.git
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
 Fish-like autosuggestions:
-https://github.com/zsh-users/zsh-autosuggestions.git
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+### Vim-plug
+For neovim:
+```sh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
