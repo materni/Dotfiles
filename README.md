@@ -75,3 +75,12 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 ```
+
+### ZSH/Oh-my-ZSH addons
+Using "gentoo" terminal style
+
+zsh-syntax-highlighting:
+https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+Fish-like autosuggestions:
+https://github.com/zsh-users/zsh-autosuggestions.git
