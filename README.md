@@ -65,7 +65,9 @@ opendoas
 plata-noir
 
 ### Base16-shell theme (dark-default used)
-https://github.com/chriskempson/base16-shell.git
+```sh
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+```
 
 Goes in .zshrc:
 ```sh
