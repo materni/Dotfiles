@@ -34,7 +34,7 @@ Xorg-xinit - Launch X11 display server
 
 Plata-noir-dark - GTK-theme
 
-nerd-fonts-iosevka
+Font - nerd-fonts-iosevka
 
 ### One line install for non-AUR programs
 
@@ -43,7 +43,7 @@ pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop pico
 ### Yay install
 https://github.com/Jguer/yay
 
-´´´
+```shell
 pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -51,8 +51,9 @@ makepkg -si
 ´´´
 
 To work with doas:
+```shell
 yay --sudo doas --sudoflags -- --save
-
+```
 ### Packages installed with the AUR
 
 joplin-desktop
