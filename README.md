@@ -48,7 +48,7 @@ pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-´´´
+```
 
 To work with doas:
 ```shell
@@ -63,3 +63,15 @@ polybar
 opendoas
 
 plata-noir
+
+### Base16-shell theme (dark-default used)
+https://github.com/chriskempson/base16-shell.git
+
+Goes in .zshrc:
+```sh
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+```
