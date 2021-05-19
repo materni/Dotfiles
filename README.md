@@ -76,7 +76,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 ```
 
-### ZSH/Oh-my-ZSH addons
+### ZSH/oh-my-ZSH addons
+Install oh-my-zsh with curl:
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 Using "gentoo" terminal style
 
 zsh-syntax-highlighting:
