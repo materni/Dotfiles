@@ -1,4 +1,7 @@
-## Packages used for TWM-setup
+## My minimal BSPWM setup
+<img src="example.png">
+
+### Packages used for TWM-setup
 
 BSPWM - Window Manager
 
