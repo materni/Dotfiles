@@ -12,6 +12,7 @@
 * Picom - Compositor (not used)
 * Polybar - Status Bar
 * Ranger - File manager
+* PCmanFM - GUI file manager
 * Zathura - PDF Reader
 * Qutebrowser - Browser
 * Doas - Replacement for sudo
@@ -23,7 +24,7 @@
 * pfetch - pc information
 
 ### One line install for non-AUR programs
-pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
+pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm
 
 ### Yay install
 https://github.com/Jguer/yay
