@@ -61,6 +61,11 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 ```
 
+Then for default-dark run in a new terminal:
+```sh
+base16_default-dark
+```
+
 ### ZSH/oh-my-ZSH addons
 Install oh-my-zsh with curl:
 ```sh
@@ -85,3 +90,11 @@ For neovim:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
+
+### Xorg conf
+Goes in
+```sh
+/etc/X11/xorg.conf.d
+```
+* nvidia-drm-outputclass.conf runs xorg with dedicated nvidia
+* touchpad.conf allows tap to click
