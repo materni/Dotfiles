@@ -20,6 +20,7 @@
 * Xorg-xinit - Launch X11 display server
 * Plata-noir-dark - GTK-theme
 * Font - nerd-fonts-iosevka
+* pfetch - pc information
 
 ### One line install for non-AUR programs
 pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst
@@ -39,13 +40,11 @@ To work with doas:
 yay --sudo doas --sudoflags -- --save
 ```
 ### Packages installed with the AUR
-joplin-desktop
-
-polybar
-
-opendoas
-
-plata-noir
+* joplin-desktop
+* polybar
+* opendoas
+* plata-noir
+* pfetch
 
 ### Base16-shell theme (dark-default used)
 ```sh
