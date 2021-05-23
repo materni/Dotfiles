@@ -20,9 +20,9 @@
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
 * Plata-noir-dark - GTK-theme
-* Font - nerd-fonts-iosevka
-* Pfetch - pc information
-* Feh - image viewer/wallpaper
+* Nerd-fonts-iosevka - Font
+* Pfetch - PC-information
+* Feh - Image viewer/wallpaper
 
 ### One line install for non-AUR programs
 ```sh
