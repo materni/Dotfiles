@@ -9,7 +9,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # <border color>
-bspc config active_border_color #E84F4F
+bspc config active_border_color #ffffff
 bspc config normal_border_color #d8d8d8
 # </border color>
 
@@ -68,6 +68,9 @@ xinput map-to-output $ID_STYLUS $MONITOR
 # <design>
 xsetroot -cursor_name left_ptr &
 feh --bg-fill $HOME/git-projects/Dotfiles/wallpapers/fjaldes.jpg
+
+xsetroot -cursor_name left_ptr &
+setxkbmap -layout dk
 
 $HOME/.config/polybar/launch.sh &
 # </design>

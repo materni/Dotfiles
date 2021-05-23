@@ -25,7 +25,7 @@ module-margin = 0
 
 modules-left = bspwm title
 modules-center = date
-modules-right = pulseaudio memory cpu battery
+modules-right = pulseaudio battery
 
 [bar/DP-3]
 inherit = bar/bar
@@ -58,7 +58,7 @@ label-padding = 1.5
 
 [module/network]
 type = internal/network
-interface = wlp2s0
+interface = wlan0
 interval = 3.0
 accumulate-stats = true
 label-connected = "Net %downspeed:8%"
@@ -70,22 +70,6 @@ interval = 0.5
 format = <label>
 label = "CPU %percentage%%"
 label-padding = 1.5
-
-[module/alsa]
-type = internal/alsa
-master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
-master-mixer = Master
-speaker-mixer = Speaker
-headphone-mixer = Headphone
-headphone-id = 9
-mapped = true
-interval = 5
-format-volume = Vol <label-volume>
-;format-Volume-padding = 1
-label-muted = muted
-label-muted-foreground = #66
 
 [module/battery]
 type = internal/battery
@@ -129,7 +113,7 @@ label-empty-padding = 1
 [module/date]
 type = internal/date
 interval = 1.0
-date = %A, %d %B %I:%M %p
+date = %A, %d %B %H:%M
 # [module/github]
 # type = internal/github
 
