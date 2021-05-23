@@ -21,8 +21,8 @@
 * Xorg-xinit - Launch X11 display server
 * Plata-noir-dark - GTK-theme
 * Font - nerd-fonts-iosevka
-* pfetch - pc information
-* feh - image viewer/wallpaper
+* Pfetch - pc information
+* Feh - image viewer/wallpaper
 
 ### One line install for non-AUR programs
 ```sh
