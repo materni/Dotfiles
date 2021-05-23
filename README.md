@@ -43,11 +43,11 @@ To work with doas:
 yay --sudo doas --sudoflags -- --save
 ```
 ### Packages installed with the AUR
-* joplin-desktop
-* polybar
-* opendoas
-* plata-noir
-* pfetch
+* Joplin-desktop
+* Polybar
+* Opendoas
+* Plata-noir
+* Pfetch
 
 ### Base16-shell theme (dark-default used)
 ```sh
