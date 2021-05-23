@@ -22,10 +22,12 @@
 * Plata-noir-dark - GTK-theme
 * Font - nerd-fonts-iosevka
 * pfetch - pc information
+* feh - image viewer/wallpaper
 
 ### One line install for non-AUR programs
-pacman -S xorg-server xorg-xinit bspwm sxhkd git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm
-
+```sh
+pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm
+```
 ### Yay install
 https://github.com/Jguer/yay
 
