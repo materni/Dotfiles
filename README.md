@@ -27,16 +27,6 @@
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
 
-### One line install
-For non-AUR:
-```sh
-pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor
-```
-
-For AUR
-```sh
-yay -S joplin-desktop plata-theme polybar pfetch-git opendoas
-```
 ### Yay install
 https://github.com/Jguer/yay
 
@@ -50,6 +40,17 @@ makepkg -si
 To work with doas:
 ```shell
 yay --sudo doas --sudoflags -- --save
+```
+
+### One line install
+For non-AUR:
+```sh
+pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor
+```
+
+For AUR
+```sh
+yay -S joplin-desktop plata-theme polybar pfetch-git opendoas
 ```
 
 ### Base16-shell theme (dark-default used)
