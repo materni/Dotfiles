@@ -37,7 +37,7 @@ cd yay
 makepkg -si
 ```
 
-To work with doas:
+To work with doas (do this after you install opendoas):
 ```shell
 yay --sudo doas --sudoflags -- --save
 ```
