@@ -1,5 +1,5 @@
 # Transparrency
-# background_opacity: 0.9
+background_opacity: 0.9
 
 # Font
 font:
@@ -18,8 +18,6 @@ font:
   bold_italic:
     family: iosevka
     style: Bold Italic
-
-  size: 15
 
 # Colors (Base16 Default Dark)
 colors:
