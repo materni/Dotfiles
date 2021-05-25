@@ -19,6 +19,7 @@
 * Joplin - Note application
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
+* Xorg-xinput - Graphics tablet input
 * Plata-noir-dark - GTK-theme
 * Nerd-fonts-iosevka - Font
 * Pfetch - PC-information
@@ -46,7 +47,7 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor tlp
+pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor tlp
 ```
 
 For AUR
