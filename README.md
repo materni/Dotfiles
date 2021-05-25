@@ -25,10 +25,12 @@
 * Feh - Image viewer/wallpaper
 * Blueberry - Bluetooth GUI
 * Nm-connection-editor - Network manager GUI
+* Picocom - Console program
 
 ### One line install for non-AUR programs
 ```sh
-pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm blueberry nm-connection-editor
+pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor
+
 ```
 ### Yay install
 https://github.com/Jguer/yay
