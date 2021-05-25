@@ -8,11 +8,6 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-# <border color>
-bspc config active_border_color #ffffff
-bspc config normal_border_color #d8d8d8
-# </border color>
-
 # <BSPWM rules>
 bspc rule -a Zathura    state=tiled
 bspc rule -a mpv        state=floating
@@ -67,7 +62,9 @@ xinput map-to-output $ID_STYLUS $MONITOR
 
 # <design>
 xsetroot -cursor_name left_ptr &
-feh --bg-fill $HOME/git-projects/Dotfiles/wallpapers/fjaldes.jpg
+feh --bg-fill $HOME/Git-projects/Dotfiles/wallpapers/fjaldes.jpg
+
+picom -b --config $HOME/.config/picom/picom.conf & 
 
 xsetroot -cursor_name left_ptr &
 setxkbmap -layout dk
