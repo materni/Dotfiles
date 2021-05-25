@@ -58,7 +58,7 @@ prompt {
 }
 
 window {
-  border: 2;
+  border: 0;
   border-color: @bg-alt;
   transparency: "real";
 }
