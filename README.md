@@ -27,10 +27,15 @@
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
 
-### One line install for non-AUR programs
+### One line install
+For non-AUR:
 ```sh
 pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor
+```
 
+For AUR
+```sh
+yay -S joplin-desktop plata-theme polybar pfetch-git opendoas
 ```
 ### Yay install
 https://github.com/Jguer/yay
@@ -46,12 +51,6 @@ To work with doas:
 ```shell
 yay --sudo doas --sudoflags -- --save
 ```
-### Packages installed with the AUR
-* Joplin-desktop
-* Polybar
-* Opendoas
-* Plata-noir
-* Pfetch
 
 ### Base16-shell theme (dark-default used)
 ```sh
@@ -104,3 +103,4 @@ Goes in
 ```
 * nvidia-drm-outputclass.conf runs xorg with dedicated nvidia
 * touchpad.conf allows tap to click
+* 50-mouse-acceleration.conf removes mouse acceleration
