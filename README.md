@@ -26,6 +26,7 @@
 * Blueberry - Bluetooth GUI
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
+* TLP - Battery life optimization
 
 ### Yay install
 https://github.com/Jguer/yay
@@ -45,7 +46,7 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor
+pacman -S xorg-server xorg-xinit bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor tlp
 ```
 
 For AUR
