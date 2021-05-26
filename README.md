@@ -9,7 +9,7 @@
 * Nvim - Editor
 * Rofi - Application Launcher
 * Htop - Process viewer
-* Picom - Compositor
+* Picom - Compositor (not used)
 * Polybar - Status Bar
 * Ranger - File manager
 * PCmanFM - GUI file manager
