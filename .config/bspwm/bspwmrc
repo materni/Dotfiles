@@ -64,7 +64,7 @@ xinput map-to-output $ID_STYLUS $MONITOR
 xsetroot -cursor_name left_ptr &
 feh --bg-fill $HOME/Git-projects/Dotfiles/wallpapers/fjaldes.jpg
 
-# picom -b --config $HOME/.config/picom/picom.conf & 
+picom -b --config $HOME/.config/picom/picom.conf & 
 
 xsetroot -cursor_name left_ptr &
 setxkbmap -layout dk
