@@ -26,8 +26,8 @@ padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-center = date
-modules-right = pulseaudio battery
+modules-center =
+modules-right = pulseaudio battery date
 
 [bar/DP-3]
 inherit = bar/bar
@@ -115,7 +115,7 @@ label-empty-padding = 1
 [module/date]
 type = internal/date
 interval = 1.0
-date = %A, %d %B %H:%M
+date = | %A, %d %B %H:%M
 # [module/github]
 # type = internal/github
 
