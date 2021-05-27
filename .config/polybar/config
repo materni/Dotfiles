@@ -12,7 +12,7 @@ height = 30
 bottom = true
 
 background = #151515
-foreground = #fff
+foreground = #d0d0d0
 
 radius = 0.0
 
