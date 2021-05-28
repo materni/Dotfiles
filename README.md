@@ -28,6 +28,7 @@
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
 * TLP - Battery life optimization
+* Ly - Display manager
 
 ### Yay install
 https://github.com/Jguer/yay
@@ -52,7 +53,7 @@ pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovi
 
 For AUR
 ```sh
-yay -S joplin-desktop plata-theme polybar pfetch-git opendoas
+yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
 ```
 
 ### Base16-shell theme (dark-default used)
