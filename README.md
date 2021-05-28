@@ -1,4 +1,5 @@
 ## My minimal BSPWM setup
+<img src="example2.png">
 <img src="example.png">
 
 ### Packages used for TWM-setup
