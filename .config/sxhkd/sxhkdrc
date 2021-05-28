@@ -22,16 +22,20 @@ super + Escape
 Print
 	flameshot gui
 
+# changing the Volume
+super + F1
+	pulsemixer --toggle-mute
+
+super + {F3, F2}
+    pulsemixer --change-volume {+,-}10
+
 # brightness
 super + {F6, F5}
     brightnessctl set 10%{+,-}
 
-# changing the Volume
-super + {F3, F2}
-    pulsemixer --change-volume {+,-}10
-
-super + F1
-	pulsemixer --toggle-mute
+# bluetooth
+super + {F7}
+	bluetoothctl power on
 
 #
 # bspwm hotkeys
@@ -138,4 +142,3 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
