@@ -14,7 +14,7 @@ height = 30
 
 bottom = true
 
-background = #151515
+background = #181818
 foreground = #d0d0d0
 
 radius = 0.0
@@ -24,7 +24,7 @@ padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-right = pulseaudio battery date
+modules-right = memory cpu pulseaudio battery date
 
 [bar/DP-3]
 inherit = bar/bar
@@ -47,21 +47,6 @@ interval = 3
 format = <label>
 label = RAM %gb_used%
 label-padding = 1.5
-
-[module/arch-aur-updates]
-type = custom/script
-exec = checkupdates | wc -l
-interval = 1000
-label = Updates: %output%
-label-padding = 1.5
-
-[module/network]
-type = internal/network
-interface = wlan0
-interval = 3.0
-accumulate-stats = true
-label-connected = "Net %downspeed:8%"
-format-connected = <label-connected>
 
 [module/cpu]
 type = internal/cpu
