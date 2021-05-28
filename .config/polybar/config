@@ -1,5 +1,8 @@
 [bar/bar]
 font-0 = "Iosevka:size=11;3"
+font-1 = "Font Awesome 5 Free:pixelsize=9;3"
+font-2 = "Font Awesome 5 Free Solid:pixelsize=9;3"
+font-3 = "Font Awesome 5 Brands:pixelsize=9;3"
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -16,17 +19,11 @@ foreground = #d0d0d0
 
 radius = 0.0
 
-# line-size = 1
-# line-color = #f00
-
-# border-size = 2
-# border-color = #00ff00
 padding-left = 1
 padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-center =
 modules-right = pulseaudio battery date
 
 [bar/DP-3]
@@ -85,7 +82,6 @@ format-discharging = <label-discharging>
 format-full = <label-full>
 
 label-charging = "BAT %percentage%%"
-label-charging-foreground = #1DB954
 label-charging-padding = 1
 
 label-discharging = "BAT %percentage%%"
@@ -102,35 +98,22 @@ index-sort = true
 enable-click = true
 reverse-scroll = false
 
-label-focused = 
+label-focused = 
 label-focused-padding = 1
 
-label-occupied = 
+label-occupied = 
 label-occupied-padding = 1
 
-
-label-empty = 
+label-empty = 
 label-empty-padding = 1
 
 [module/date]
 type = internal/date
 interval = 1.0
 date = | %A, %d %B %H:%M
-# [module/github]
-# type = internal/github
-
-# ; Accessing an access token stored in file
-# token = ${file:/path/to/file/containing/github/access.token}
-
-# ; Accessing an access token stored in an environment variable
-# token = ${env:GITHUB_ACCESS_TOKEN}
-
-# ; Whether empty notifications should be displayed or not
-# empty-notifications = false
 
 [module/title]
 type = internal/xwindow
-# format-background = #f00
 format-foreground = #414141
 label-empty = Desktop
 format-padding = 1
