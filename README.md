@@ -13,7 +13,6 @@
 * Picom - Compositor
 * Polybar - Status Bar
 * Ranger - File manager
-* PCmanFM - GUI file manager
 * Zathura - PDF Reader
 * Qutebrowser - Browser
 * Doas - Replacement for sudo
@@ -25,7 +24,6 @@
 * Nerd-fonts-iosevka - Font
 * Pfetch - PC-information
 * Feh - Image viewer/wallpaper
-* Blueberry - Bluetooth GUI
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
 * TLP - Battery life optimization
@@ -49,7 +47,7 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst pcmanfm picocom blueberry nm-connection-editor tlp
+pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom nm-connection-editor tlp
 ```
 
 For AUR
