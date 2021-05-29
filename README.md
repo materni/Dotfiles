@@ -60,7 +60,7 @@ For AUR
 yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
 ```
 
-Or Void-Linus XBPS:
+Or Void-Linux XBPS:
 ```sh
 xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger pulseaudio pavucontrol pulsemixer zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas krita
 ```
