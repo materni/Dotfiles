@@ -22,6 +22,7 @@
 * Xorg-xinput - Graphics tablet input
 * Plata-noir-dark - GTK-theme
 * Nerd-fonts-iosevka - Font
+* Font-awesome5 - Icons
 * Pfetch - PC-information
 * Feh - Image viewer/wallpaper
 * Nm-connection-editor - Network manager GUI
@@ -57,7 +58,7 @@ yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
 
 Or Void-Linus XBPS:
 ```sh
-xbps-install xorg bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas
+xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas
 ```
 
 ### Base16-shell theme (dark-default used)
