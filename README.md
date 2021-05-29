@@ -29,7 +29,7 @@
 * TLP - Battery life optimization
 * Ly - Display manager
 
-### Yay install
+### Yay install (for arch)
 https://github.com/Jguer/yay
 
 ```shell
@@ -53,6 +53,11 @@ pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovi
 For AUR
 ```sh
 yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
+```
+
+Or Void-Linus XBPS:
+```sh
+xbps-install xorg bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas
 ```
 
 ### Base16-shell theme (dark-default used)
