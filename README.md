@@ -29,6 +29,9 @@
 * Picocom - Console program
 * TLP - Battery life optimization
 * Ly - Display manager
+* Pulseaudio - Audio
+* Pavucontrol - GUI audio control
+* Pulsemixer - Audio control
 * Krita - Drawing/photo-editing
 
 ### Yay install (for arch)
@@ -49,7 +52,7 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom nm-connection-editor tlp krita
+pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor tlp krita
 ```
 
 For AUR
@@ -59,7 +62,7 @@ yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
 
 Or Void-Linus XBPS:
 ```sh
-xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas krita
+xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger pulseaudio pavucontrol pulsemixer zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas krita
 ```
 
 ### Base16-shell theme (dark-default used)
