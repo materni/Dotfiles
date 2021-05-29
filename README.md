@@ -15,7 +15,7 @@
 * Ranger - File manager
 * Zathura - PDF Reader
 * Qutebrowser - Browser
-* Doas - Replacement for sudo
+* Opendoas - Replacement for sudo
 * Joplin - Note application
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
@@ -29,6 +29,7 @@
 * Picocom - Console program
 * TLP - Battery life optimization
 * Ly - Display manager
+* Krita - Drawing/photo-editing
 
 ### Yay install (for arch)
 https://github.com/Jguer/yay
@@ -48,7 +49,7 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom nm-connection-editor tlp
+pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom nm-connection-editor tlp krita
 ```
 
 For AUR
@@ -58,7 +59,7 @@ yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
 
 Or Void-Linus XBPS:
 ```sh
-xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas
+xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas krita
 ```
 
 ### Base16-shell theme (dark-default used)
