@@ -1,8 +1,8 @@
 [bar/bar]
 font-0 = "Iosevka:size=11;3"
-font-1 = "Font Awesome 5 Free:pixelsize=9;3"
-font-2 = "Font Awesome 5 Free Solid:pixelsize=9;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=9;3"
+font-1 = "Font Awesome 5 Free:pixelsize=8;3"
+font-2 = "Font Awesome 5 Free Solid:pixelsize=8;3"
+font-3 = "Font Awesome 5 Brands:pixelsize=8;3"
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
