@@ -1,6 +1,6 @@
 ## My minimal BSPWM setup
-<img src="example2.png">
 <img src="example.png">
+<img src="example2.png">
 
 ### Packages used for TWM-setup
 * BSPWM - Window Manager
