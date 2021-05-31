@@ -1,11 +1,8 @@
 [bar/bar]
 font-0 = "Iosevka:size=11;3"
-font-1 = "Font Awesome 5 Free:pixelsize=8;3"
-font-2 = "Font Awesome 5 Free Solid:pixelsize=8;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=8;3"
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+font-1 = "Font Awesome 5 Free:pixelsize=8;2"
+font-2 = "Font Awesome 5 Free Solid:pixelsize=8;2"
+font-3 = "Font Awesome 5 Brands:pixelsize=8;2"
 
 fixed-center = true
 
@@ -24,8 +21,9 @@ padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-right = memory cpu pulseaudio battery date
+modules-right = cpu memory pulseaudio battery date
 
+# External monitor bars
 [bar/DP-3]
 inherit = bar/bar
 
@@ -45,15 +43,21 @@ monitor = HDMI-0
 type = internal/memory
 interval = 3
 format = <label>
-label = RAM %gb_used%
-label-padding = 1.5
+format-padding = 1
+format-prefix = RAM
+format-prefix-foreground = #414141
+label = "%percentage_used%%"
+label-padding-left = 1
 
 [module/cpu]
 type = internal/cpu
 interval = 0.5
 format = <label>
-label = "CPU %percentage%%"
-label-padding = 1.5
+format-padding = 1
+format-prefix = CPU
+format-prefix-foreground = #414141
+label = "%percentage%%"
+label-padding = 1
 
 [module/battery]
 type = internal/battery
@@ -66,13 +70,25 @@ format-charging = <label-charging>
 format-discharging = <label-discharging>
 format-full = <label-full>
 
-label-charging = "BAT %percentage%%"
+format-charging-padding = 1
+format-charging-prefix = BAT
+format-charging-prefix-foreground = #414141
+
+format-discharging-padding = 1
+format-discharging-prefix = BAT
+format-discharging-prefix-foreground = #414141
+
+format-full-padding = 1
+format-full-prefix = BAT
+format-full-prefix-foreground = #414141
+
+label-charging = "%percentage%%"
 label-charging-padding = 1
 
-label-discharging = "BAT %percentage%%"
+label-discharging = "%percentage%%"
 label-discharging-padding = 1
 
-label-full = "BAT %percentage%%"
+label-full = "%percentage%%"
 label-full-padding = 1
 
 [module/bspwm]
@@ -86,7 +102,7 @@ reverse-scroll = false
 label-focused = 
 label-focused-padding = 1
 
-label-occupied = 
+label-occupied = 
 label-occupied-padding = 1
 
 label-empty = 
@@ -107,10 +123,17 @@ label-maxlen = 50
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume-padding = 1.5
-format-muted-padding = 1.5
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+format-volume-prefix-padding = 1
+format-volume-prefix = VOL
+format-volume-prefix-foreground = #414141
+format-volume-padding = 1
+label-volume = "%percentage%%"
+
 label-muted = muted
-label-muted-foreground = #414141
-label-volume-foreground = ${root.foreground}
+format-muted-prefix-padding = 1
+format-muted-prefix = VOL
+format-muted-prefix-foreground = #414141
+format-muted-padding = 1
+
+click-right = pavucontrol&
