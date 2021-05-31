@@ -21,7 +21,7 @@ padding-right = 1
 module-margin = 0
 
 modules-left = bspwm title
-modules-right = cpu memory pulseaudio battery date
+modules-right = network cpu memory pulseaudio battery date
 
 # External monitor bars
 [bar/DP-3]
@@ -38,6 +38,24 @@ monitor = eDP-1-1
 inherit = bar/bar
 
 monitor = HDMI-0
+
+# Modules
+
+[module/network]
+type = internal/network
+interface = wlp7s0
+interval = 1.0
+
+format-connected-prefix = WIFI
+format-connected-prefix-foreground = #414141
+
+format-disconnected-prefix = WIFI
+format-disconnected-prefix-foreground = #414141
+
+label-connected-padding = 1
+label-disconnected-padding = 1
+label-connected = "%downspeed%"
+label-disconnected = disconnected
 
 [module/memory]
 type = internal/memory
