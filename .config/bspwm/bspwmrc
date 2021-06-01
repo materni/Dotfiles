@@ -22,10 +22,10 @@ bspc rule -a mpv        state=floating
 # </BSPWM rules>
 
 # <monitor setup>
-my_laptop_external_monitor=$(xrandr --query | grep 'DP-3')
+my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-0')
 if [[ $my_laptop_external_monitor = *connected* ]]; then
     xrandr \
-        --output DP-3 \
+        --output HDMI-0 \
             --primary \
             --mode 1920x1080 \
             --fbmm 598x336 \
@@ -35,23 +35,17 @@ if [[ $my_laptop_external_monitor = *connected* ]]; then
             --mode 1920x1080 \
             --fbmm 344x194 \
             --rotate normal \
-            --right-of DP-3 \
-        --output HDMI-0 \
-            --mode 1920x1080 \
-            --fbmm 294x165 \
-            --rotate normal \
-            --below DP-3
+            --right-of HDMI-0
 
-    bspc monitor DP-3    -d 1 2 3 4
-    bspc monitor eDP-1-1 -d 5 6 7 8
-    bspc monitor HDMI-0  -d 9 0
+    bspc monitor HDMI-0     -d 1 2 3 4
+    bspc monitor eDP-1-1    -d 5 6 7 8
 else
     xrandr \
         --output eDP-1-1 \
             --primary \
             --mode 1920x1080 \
             --fbmm 344x194 \
-            --rotate normal \
+            --rotate normal
     
     bspc monitor eDP-1-1 -d 1 2 3 4
 fi
@@ -70,7 +64,7 @@ xinput map-to-output $ID_STYLUS $MONITOR
 
 # <design>
 xsetroot -cursor_name left_ptr &
-feh --bg-fill $HOME/Git-projects/Dotfiles/wallpapers/fjaldes.jpg
+feh --bg-fill $HOME/Git-projects/Dotfiles/wallpapers/cow.jpg
 
 picom -b --config $HOME/.config/picom/picom.conf & 
 
