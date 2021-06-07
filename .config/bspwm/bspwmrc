@@ -35,10 +35,16 @@ if [[ $my_laptop_external_monitor = *connected* ]]; then
             --mode 1920x1080 \
             --fbmm 344x194 \
             --rotate normal \
-            --right-of HDMI-0
+            --right-of HDMI-0 \
+        --output DP-3 \
+	        --mode 1920x1080 \
+            --fbmm 294x165 \
+	        --rotate normal \
+	        --below HDMI-0
 
     bspc monitor HDMI-0     -d 1 2 3 4
     bspc monitor eDP-1-1    -d 5 6 7 8
+    bspc monitor DP-3	    -d 9 0
 else
     xrandr \
         --output eDP-1-1 \
@@ -63,13 +69,9 @@ xinput map-to-output $ID_STYLUS $MONITOR
 # </tablet setup>
 
 # <design>
-xsetroot -cursor_name left_ptr &
-feh --bg-fill $HOME/Git-projects/Dotfiles/wallpapers/cow.jpg
-
-picom -b --config $HOME/.config/picom/picom.conf & 
-
-xsetroot -cursor_name left_ptr &
 setxkbmap -layout dk
+xsetroot -cursor_name left_ptr &
 
-$HOME/.config/polybar/launch.sh &
+feh --bg-fill $HOME/Pictures/cow.jpg
+picom -b --config $HOME/.config/picom/picom.conf & 
 # </design>
