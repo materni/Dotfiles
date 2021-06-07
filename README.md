@@ -1,7 +1,3 @@
-## My minimal BSPWM setup
-<img src="example.png">
-<img src="example2.png">
-
 ### Packages used for TWM-setup
 * BSPWM - Window Manager
 * SXHKD - Keybinds
@@ -16,23 +12,20 @@
 * Zathura - PDF Reader
 * Qutebrowser - Browser
 * Opendoas - Replacement for sudo
-* Joplin - Note application
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
 * Xorg-xinput - Graphics tablet input
 * Plata-noir-dark - GTK-theme
 * Nerd-fonts-iosevka - Font
 * Font-awesome5 - Icons
-* Pfetch - PC-information
 * Feh - Image viewer/wallpaper
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
-* TLP - Battery life optimization
-* Ly - Display manager
 * Pulseaudio - Audio
 * Pavucontrol - GUI audio control
 * Pulsemixer - Audio control
 * Krita - Drawing/photo-editing
+* CPU-autofreq - Battery improvement
 
 ### Yay install (for arch)
 https://github.com/Jguer/yay
@@ -52,36 +45,16 @@ yay --sudo doas --sudoflags -- --save
 ### One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor tlp krita
+pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
 ```
 
-For AUR
+For AUR:
 ```sh
-yay -S joplin-desktop plata-theme polybar pfetch-git ly-git opendoas
+yay -S plata-theme polybar opendoas cpu-autofreq
 ```
-
-Or Void-Linux XBPS:
-```sh
-xbps-install xorg bspwm sxhkd feh git font-iosevka alacritty pfetch neovim rofi htop picom ranger pulseaudio pavucontrol pulsemixer zathura zathura-pdf-poppler qutebrowser flameshot dunst picocom tlp opendoas krita
-```
-
 ### Base16-shell theme (dark-default used)
 ```sh
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-```
-
-Goes in .zshrc:
-```sh
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
-```
-
-Then for default-dark run in a new terminal:
-```sh
-base16_default-dark
 ```
 
 ### ZSH/oh-my-ZSH addons
