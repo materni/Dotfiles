@@ -1,4 +1,4 @@
-### Packages used for TWM-setup
+## Packages used for TWM-setup
 * BSPWM - Window Manager
 * SXHKD - Keybinds
 * Dunst - Notifications
@@ -27,7 +27,7 @@
 * Krita - Drawing/photo-editing
 * CPU-autofreq - Battery improvement
 
-### Yay install (for arch)
+## Yay install (for arch)
 https://github.com/Jguer/yay
 
 ```shell
@@ -42,7 +42,7 @@ To work with doas (do this after you install opendoas):
 yay --sudo doas --sudoflags -- --save
 ```
 
-### One line install
+## One line install
 For non-AUR:
 ```sh
 pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
@@ -52,18 +52,16 @@ For AUR:
 ```sh
 yay -S plata-theme polybar opendoas cpu-autofreq
 ```
-### Base16-shell theme (dark-default used)
+## Base16-shell theme (dark-default used)
 ```sh
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 ```
 
-### ZSH/oh-my-ZSH addons
+## ZSH/oh-my-ZSH addons
 Install oh-my-zsh with curl:
 ```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-Using "gentoo" terminal style
 
 zsh-syntax-highlighting:
 ```sh
@@ -75,14 +73,14 @@ Fish-like autosuggestions:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-### Vim-plug
+## Vim-plug
 For neovim:
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-### Xorg conf
+## Xorg conf
 Goes in
 ```sh
 /etc/X11/xorg.conf.d
