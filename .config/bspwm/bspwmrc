@@ -1,6 +1,11 @@
 #!/bin/bash
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+# <Xrandr>
+source ~/.config/bspwm/monitors
+source ~/.config/bspwm/huion
+# </Xrandr>
+
 # <general config>
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -21,57 +26,12 @@ bspc rule -a Zathura    state=tiled
 bspc rule -a mpv        state=floating
 # </BSPWM rules>
 
-# <monitor setup>
-my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-0')
-if [[ $my_laptop_external_monitor = *connected* ]]; then
-    xrandr \
-        --output HDMI-0 \
-            --primary \
-            --mode 1920x1080 \
-            --fbmm 598x336 \
-            --rate 144 \
-            --rotate normal \
-        --output eDP-1-1 \
-            --mode 1920x1080 \
-            --fbmm 344x194 \
-            --rotate normal \
-            --right-of HDMI-0 \
-        --output DP-3 \
-	        --mode 1920x1080 \
-            --fbmm 294x165 \
-	        --rotate normal \
-	        --below HDMI-0
-
-    bspc monitor HDMI-0     -d 1 2 3 4
-    bspc monitor eDP-1-1    -d 5 6 7 8
-    bspc monitor DP-3	    -d 9 0
-else
-    xrandr \
-        --output eDP-1-1 \
-            --primary \
-            --mode 1920x1080 \
-            --fbmm 344x194 \
-            --rotate normal
-    
-    bspc monitor eDP-1-1 -d 1 2 3 4
-fi
-
-xrandr --dpi 96
-# </monitor setup>
-
-# <tablet setup>
-MONITOR="HDMI-0"
-PAD_NAME='Tablet Monitor'
-
-ID_STYLUS=`xinput | grep -m 1 "Tablet Monitor stylus" | cut -d '=' -f 2 | cut -f 1`
-
-xinput map-to-output $ID_STYLUS $MONITOR
-# </tablet setup>
-
 # <design>
 setxkbmap -layout dk
 xsetroot -cursor_name left_ptr &
 
-feh --bg-fill $HOME/Pictures/cow.jpg
-picom -b --config $HOME/.config/picom/picom.conf & 
+feh --bg-fill ~/Git/Dotfiles/wallpapers/cow.jpg
+picom -b --config ~/.config/picom/picom.conf &
+
+~/.config/polybar/launch.sh &
 # </design>
