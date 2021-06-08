@@ -12,7 +12,7 @@ fixed-center = true
 width = 100%
 height = 30
 
-background = #181818
+background = #141414
 foreground = #d0d0d0
 
 radius = 0.0
@@ -24,23 +24,6 @@ module-margin = 0
 modules-left = bspwm title
 modules-right = pulseaudio battery date
 # </Positioning>
-
-# <External monitor bars>
-[bar/DP-3]
-inherit = bar/bar
-
-monitor = DP-3
-
-[bar/eDP-1-1]
-inherit = bar/bar
-
-monitor = eDP-1-1
-
-[bar/HDMI-0]
-inherit = bar/bar
-
-monitor = HDMI-0
-# </External monitor bars>
 
 # <Modules>
 [module/battery]
