@@ -2,6 +2,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # <Xrandr>
+xrandr --dpi 96
 source ~/.config/bspwm/monitors
 source ~/.config/bspwm/huion
 # </Xrandr>
