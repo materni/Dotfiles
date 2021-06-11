@@ -9,7 +9,7 @@
 * Picom - Compositor
 * Ranger - File manager
 * Zathura - PDF Reader
-* Qutebrowser - Browser
+* Firefox - Browser
 * Opendoas - Replacement for sudo
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
@@ -46,7 +46,7 @@ yay --sudo doas --sudoflags -- --save
 ## One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
+pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler firefox pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
 ```
 
 For AUR:
@@ -79,4 +79,9 @@ For neovim:
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+## Firefox theme
+```sh
+git clone https://github.com/andreasgrafen/ag.proton
 ```
