@@ -18,6 +18,14 @@ super + q
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Show date
+super + alt + t
+	$HOME/.config/sxhkd/date
+
+# Show battery
+super + alt + b
+	$HOME/.config/sxhkd/battery
+
 # screenshot 
 Print
 	flameshot gui

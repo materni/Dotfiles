@@ -7,7 +7,6 @@
 * Rofi - Application Launcher
 * Htop - Process viewer
 * Picom - Compositor
-* Polybar - Status Bar
 * Ranger - File manager
 * Zathura - PDF Reader
 * Qutebrowser - Browser
@@ -15,9 +14,10 @@
 * Flameshot - Screenshot tool
 * Xorg-xinit - Launch X11 display server
 * Xorg-xinput - Graphics tablet input
+* Xorg-xrandr - Display configuration
+* Xorg-xsetroot - Fixes for mouse
 * Plata-noir-dark - GTK-theme
 * Nerd-fonts-iosevka - Font
-* Font-awesome5 - Icons
 * Feh - Image viewer/wallpaper
 * Nm-connection-editor - Network manager GUI
 * Picocom - Console program
@@ -26,6 +26,7 @@
 * Pulsemixer - Audio control
 * Krita - Drawing/photo-editing
 * CPU-autofreq - Battery improvement
+* ACPI - Battery information
 
 ## Yay install (for arch)
 https://github.com/Jguer/yay
@@ -45,12 +46,12 @@ yay --sudo doas --sudoflags -- --save
 ## One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
+pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pavucontrol pulsemixer flameshot dunst picocom nm-connection-editor krita
 ```
 
 For AUR:
 ```sh
-yay -S plata-theme polybar opendoas cpu-autofreq
+yay -S plata-theme opendoas cpu-autofreq
 ```
 ## Base16-shell theme (dark-default used)
 ```sh
@@ -79,12 +80,3 @@ For neovim:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
-## Xorg conf
-Goes in
-```sh
-/etc/X11/xorg.conf.d
-```
-* nvidia-drm-outputclass.conf runs xorg with dedicated nvidia
-* touchpad.conf allows tap to click
-* 50-mouse-acceleration.conf removes mouse acceleration
