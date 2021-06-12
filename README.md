@@ -6,7 +6,6 @@
 * Nvim - Editor
 * Rofi - Application Launcher
 * Htop - Process viewer
-* Picom - Compositor
 * Ranger - File manager
 * Zathura - PDF Reader
 * Qutebrowser - Browser
@@ -19,7 +18,6 @@
 * Plata-noir-dark - GTK-theme
 * Nerd-fonts-iosevka - Font
 * Feh - Image viewer/wallpaper
-* Nm-connection-editor - Network manager GUI
 * Picocom - Console program
 * Pulseaudio - Audio
 * Pulseaudio-bluetooth - bluetooth for pulseaudio
@@ -46,7 +44,7 @@ yay --sudo doas --sudoflags -- --save
 ## One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler firefox pulseaudio pulseaudio-bluetooth pulsemixer flameshot dunst picocom nm-connection-editor krita
+pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pulseaudio-bluetooth pulsemixer flameshot dunst picocom krita
 ```
 
 For AUR:
