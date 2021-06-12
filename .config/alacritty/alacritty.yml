@@ -1,11 +1,7 @@
-# Transparrency
-background_opacity: 0.9
-
-# Padding
-window:
-  padding:
-    x: 5
-    y: 5
+env:
+  TERM: "alacritty"
+  WINIT_HIDPI_FACTOR: "1.3"
+  WINIT_X11_SCALE_FACTOR: "1.3"
 
 # Font
 font:
