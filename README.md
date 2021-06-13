@@ -52,10 +52,6 @@ For AUR:
 ```sh
 yay -S plata-theme opendoas cpu-autofreq
 ```
-## Base16-shell theme (dark-default used)
-```sh
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-```
 
 ## ZSH/oh-my-ZSH addons
 Install oh-my-zsh with curl:
