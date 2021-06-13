@@ -24,7 +24,7 @@ super + alt + g
 
 # Show date
 super + alt + t
-	$HOME/.config/sxhkd/date
+	notify-send "$(date +%H:%M)" "$(date +"%d/%m/%y - %A")"
 
 # Show battery
 super + alt + b
