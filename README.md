@@ -45,7 +45,7 @@ yay --sudo doas --sudoflags -- --save
 ## One line install
 For non-AUR:
 ```sh
-pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pulseaudio-bluetooth pulsemixer flameshot dunst picocom krita
+pacman -S xorg-server xorg-xinit xorg-xinput xorg-xrandr xorg-xrdb bspwm sxhkd feh git alacritty neovim rofi htop picom ranger zathura zathura-pdf-poppler qutebrowser pulseaudio pulseaudio-bluetooth pulsemixer flameshot dunst picocom krita
 ```
 
 For AUR:
