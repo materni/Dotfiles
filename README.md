@@ -15,7 +15,6 @@
 * Xorg-xinput 			- Graphics tablet input
 * Xorg-xrandr 			- Display configuration
 * Xorg-xsetroot 		- Fixes for mouse
-* Xorg-xrdb				- Xresources
 * Plata-noir-dark 		- GTK-theme
 * Nerd-fonts-iosevka 	- Font
 * Feh 					- Image viewer/wallpaper
