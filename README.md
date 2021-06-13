@@ -1,30 +1,31 @@
 ## Packages used for TWM-setup
-* BSPWM - Window Manager
-* SXHKD - Keybinds
-* Dunst - Notifications
-* Alacritty - Terminal Emulator
-* Nvim - Editor
-* Rofi - Application Launcher
-* Htop - Process viewer
-* Ranger - File manager
-* Zathura - PDF Reader
-* Qutebrowser - Browser
-* Opendoas - Replacement for sudo
-* Flameshot - Screenshot tool
-* Xorg-xinit - Launch X11 display server
-* Xorg-xinput - Graphics tablet input
-* Xorg-xrandr - Display configuration
-* Xorg-xsetroot - Fixes for mouse
-* Plata-noir-dark - GTK-theme
-* Nerd-fonts-iosevka - Font
-* Feh - Image viewer/wallpaper
-* Picocom - Console program
-* Pulseaudio - Audio
-* Pulseaudio-bluetooth - bluetooth for pulseaudio
-* Pulsemixer - Audio control
-* Krita - Drawing/photo-editing
-* CPU-autofreq - Battery improvement
-* ACPI - Battery information
+* BSPWM 				- Window Manager
+* SXHKD 				- Keybinds
+* Dunst 				- Notifications
+* Alacritty 			- Terminal Emulator
+* Nvim 					- Editor
+* Rofi 					- Application Launcher
+* Htop 					- Process viewer
+* Ranger 				- File manager
+* Zathura 				- PDF Reader
+* Qutebrowser 			- Browser
+* Opendoas 				- Replacement for sudo
+* Flameshot 			- Screenshot tool
+* Xorg-xinit 			- Launch X11 display server
+* Xorg-xinput 			- Graphics tablet input
+* Xorg-xrandr 			- Display configuration
+* Xorg-xsetroot 		- Fixes for mouse
+* Xorg-xrdb				- Xresources
+* Plata-noir-dark 		- GTK-theme
+* Nerd-fonts-iosevka 	- Font
+* Feh 					- Image viewer/wallpaper
+* Picocom 				- Console program
+* Pulseaudio 			- Audio
+* Pulseaudio-bluetooth 	- bluetooth for pulseaudio
+* Pulsemixer 			- Audio control
+* Krita 				- Drawing/photo-editing
+* CPU-autofreq 			- Battery improvement
+* ACPI 					- Battery information
 
 ## Yay install (for arch)
 https://github.com/Jguer/yay
@@ -78,3 +79,10 @@ For neovim:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
+
+## Wallpaper
+Wallpaper from Unsplash by Dylan Leagh
+```sh
+https://unsplash.com/@dylanleagh
+```
+

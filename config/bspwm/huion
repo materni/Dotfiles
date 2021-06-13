@@ -1,0 +1,7 @@
+#!/bin/bash
+MONITOR="DP-3"
+PAD_NAME='Tablet Monitor'
+
+ID_STYLUS=`xinput | grep -m 1 "Tablet Monitor Pen Pen" | cut -d '=' -f 2 | cut -f 1`
+
+xinput map-to-output $ID_STYLUS $MONITOR

@@ -1,0 +1,35 @@
+#!/bin/bash
+my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-0')
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    xrandr \
+        --output HDMI-0 \
+            --primary \
+            --mode 1920x1080 \
+            --fbmm 598x336 \
+            --rate 144 \
+            --rotate normal \
+        --output eDP-1-1 \
+            --mode 1920x1080 \
+            --fbmm 344x194 \
+            --rotate normal \
+            --right-of HDMI-0 \
+        --output DP-3 \
+	        --mode 1920x1080 \
+            --fbmm 294x165 \
+	        --rotate normal \
+	        --below HDMI-0
+
+    bspc monitor HDMI-0     -d 1 2 3 4
+    bspc monitor eDP-1-1    -d 5 6 7 8
+    bspc monitor DP-3	    -d 9 0
+else
+    xrandr \
+        --output eDP-1-1 \
+            --primary \
+            --mode 1920x1080 \
+            --fbmm 344x194 \
+            --rotate normal
+
+    bspc monitor eDP-1-1 -d 1 2 3 4
+fi
+

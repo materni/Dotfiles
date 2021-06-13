@@ -1,6 +1,0 @@
-#!/bin/bash
-
-title="Battery"
-text="$(acpi | grep 'Battery \0')"
-
-notify-send "$title" "$text"
