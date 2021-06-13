@@ -1,0 +1,17 @@
+#!/bin/bash
+
+buds_connected=$(bluetoothctl info 1C:E6:1D:7C:3E:61 | grep 'Connected')
+if [[ $buds_connected = *yes* ]]; then
+	bluetoothctl power off
+	notify-send "Buds disconnected"
+else
+	bluetoothctl power on
+	buds_succ=$(bluetoothctl connect 1C:E6:1D:7C:3E:61 | grep 'Connection')
+	if [[ $buds_succ = *successful* ]]; then
+		notify-send "Buds connected"
+	else
+		bluetoothctl power off
+		notify-send "Could not connect buds"
+	fi
+fi
+

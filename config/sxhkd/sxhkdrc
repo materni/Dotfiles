@@ -18,6 +18,10 @@ super + q
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Connect buds
+super + alt + g
+	$HOME/.config/sxhkd/buds
+
 # Show date
 super + alt + t
 	$HOME/.config/sxhkd/date
