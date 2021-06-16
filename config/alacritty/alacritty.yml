@@ -1,8 +1,8 @@
 # X11 Scaling
 env:
   TERM: "alacritty"
-  WINIT_HIDPI_FACTOR: "1.3"
-  WINIT_X11_SCALE_FACTOR: "1.3"
+  WINIT_HIDPI_FACTOR: "1.25"
+  WINIT_X11_SCALE_FACTOR: "1.25"
 
 # Padding
 window:
