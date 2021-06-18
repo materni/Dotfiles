@@ -4,12 +4,6 @@ env:
   WINIT_HIDPI_FACTOR: "1.25"
   WINIT_X11_SCALE_FACTOR: "1.25"
 
-# Padding
-window:
-  padding:
-    x: 5
-    y: 5
-
 # Font
 font:
   normal:

@@ -1,3 +1,8 @@
+" Options
+let bufferline = get(g:, 'bufferline', {})
+let bufferline.closable = v:false
+let bufferline.clickable = v:true
+
 " Move to previous/next
 nnoremap <silent>    <A-,> :BufferPrevious<CR>
 nnoremap <silent>    <A-.> :BufferNext<CR>
