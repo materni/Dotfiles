@@ -26,7 +26,7 @@
 * CPU-autofreq 			- Battery improvement
 * ACPI 					- Battery information
 
-## Yay install (for arch)
+## Yay install
 https://github.com/Jguer/yay
 
 ```shell
@@ -76,6 +76,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 ## Wallpaper
-Wallpaper from Unsplash by Dylan Leagh
-https://unsplash.com/@dylanleagh
+Wallpaper from Unsplash by Dylan Leagh: https://unsplash.com/@dylanleagh
 
