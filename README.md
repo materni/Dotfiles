@@ -77,7 +77,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ## Wallpaper
 Wallpaper from Unsplash by Dylan Leagh
-```sh
 https://unsplash.com/@dylanleagh
-```
 
