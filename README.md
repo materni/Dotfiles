@@ -1,3 +1,6 @@
+## TWM BSPWM Setup
+<img src="example.png">
+
 ## Packages used for TWM-setup
 * BSPWM 				- Window Manager
 * SXHKD 				- Keybinds
@@ -11,10 +14,7 @@
 * Qutebrowser 			- Browser
 * Opendoas 				- Replacement for sudo
 * Flameshot 			- Screenshot tool
-* Xorg-xinit 			- Launch X11 display server
-* Xorg-xinput 			- Graphics tablet input
-* Xorg-xrandr 			- Display configuration
-* Xorg-xsetroot 		- Fixes for mouse
+* Xorg			 		- Fixes for mouse
 * Plata-noir-dark 		- GTK-theme
 * Nerd-fonts-iosevka 	- Font
 * Feh 					- Image viewer/wallpaper
