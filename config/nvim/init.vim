@@ -20,7 +20,7 @@ so ~/.config/nvim/vim-plug.vim
 so ~/.config/nvim/barbar.vim
 
 " Nerdtree
-so ~/.config/nvim/nvim-tree.lua
+so ~/.config/nvim/nvim-tree.vim
 
 " Colorscheme
 colorscheme base16-default-dark
