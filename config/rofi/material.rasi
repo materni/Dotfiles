@@ -10,7 +10,7 @@ configuration {
 
 * {
 
-  bg: #151515;
+  bg: #141414;
   bg-alt: #414141;
 
   fg: #d0d0d0;
