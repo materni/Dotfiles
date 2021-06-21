@@ -14,7 +14,7 @@
 * Qutebrowser        - Browser
 * Opendoas           - Replacement for sudo
 * Flameshot          - Screenshot tool
-* Xorg	             - Xserver
+* Xorg	              - Xserver
 * Plata-theme        - GTK-theme
 * Papirus-icon-theme - Icon theme
 * Nerd-fonts         - Font
@@ -54,4 +54,3 @@ For neovim:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
