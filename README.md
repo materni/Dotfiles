@@ -14,8 +14,9 @@
 * Qutebrowser        - Browser
 * Opendoas           - Replacement for sudo
 * Flameshot          - Screenshot tool
-* Xorg	              - Xserver
+* Xorg	             - Xserver
 * Plata-theme        - GTK-theme
+* Papirus-icon-theme - Icon theme
 * Nerd-fonts         - Font
 * Feh                - Image viewer/wallpaper
 * Picocom            - Console program
@@ -23,12 +24,12 @@
 * Pulsemixer         - Audio control
 * Krita              - Drawing/photo-editing
 * ACPI               - Battery information
+* Pcmanfm            - GUI File manager
 
 ### One line install
 For Void Linux XBPS:
 ```sh
-xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst picocom krita acpi void-repo-multilib void-repo-multilib-nonfree
-void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
+xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst picocom krita acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme pcmanfm nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
 ```
 
 ### ZSH/oh-my-ZSH addons
