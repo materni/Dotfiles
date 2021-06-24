@@ -1,0 +1,20 @@
+#!/bin/bash
+cd ~/
+mkdir -p ~/.local/bin
+
+# Download and unzip discord
+wget "https://discordapp.com/api/download/canary?platform=linux&format=tar.gz" -O discord.tar.gz
+tar -xvf discord.tar.gz -C ~/.local/bin
+
+# Make symlink to PATH
+sudo ln -s ~/.local/bin/DiscordCanary/discord.png /usr/share/icons/discord.png
+sudo ln -s ~/.local/bin/DiscordCanary/DiscordCanary /usr/bin
+
+# Create .desktop
+echo -e "[Desktop Entry]\nName=Discord\nComment=Free Text & Voice Chat for Gamers\nExec=DiscordCanary\nType=Application\nTerminal=false\nIcon=/usr/share/icons/discord.png\nCategories=Network;" > discord.desktop
+
+# Move .desktop
+mkdir -p ~/.local/share/applications/
+mv ~/discord.desktop ~/.local/share/applications/
+sudo ln -s ~/.local/share/applications/discord.desktop /usr/share/applications/discord.desktop
+
