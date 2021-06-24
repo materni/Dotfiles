@@ -21,6 +21,7 @@ xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi ht
 cd ~/
 mkdir -p .config
 git clone https://github.com/LinusTheDane/Dotfiles
+cd Dotfiles
 
 # Copy the files
 cd .config && cp -r * ~/.config
