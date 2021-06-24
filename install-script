@@ -23,8 +23,8 @@ mkdir -p .config
 git clone https://github.com/LinusTheDane/Dotfiles
 
 # Copy the files
-cp -r .config ~/
-cd .. && cp .zshrc .Xresources 
+cd .config && cp -r * ~/.config
+cd .. && cd HOME/ && cp .zshrc .Xresources ~/
 
 # Set nvidia as default
 textPrompt="Do you wish to install discord? Y/n";
@@ -34,7 +34,7 @@ prompt
 
 # Discord install, as Void does not have Discord in the repos
 textPrompt="Do you wish to install discord? Y/n";
-function installPrompt{./discord};
+function installPrompt{./discord-script};
 function noInstall{};
 prompt
 
