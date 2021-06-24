@@ -30,7 +30,7 @@ bspc rule -a mpv        state=floating	layer=above
 # <design>
 setxkbmap -layout dk
 xsetroot -cursor_name left_ptr &
-feh --bg-fill ~/Git/Dotfiles/wallpapers/xavier-cuenca-e46-5.jpg
+feh --bg-fill ~/.config/bspwm/wallpapers/wolf-snow.jpg
 picom &
 # </design>
 

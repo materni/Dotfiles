@@ -1,0 +1,42 @@
+#!/bin/bash
+# This is a small install script for my Void-Linux setup
+# It is not necessary to git clone the repo, script will do it
+
+# Install prompt
+function prompt {
+	while true; do
+		read -p textPrompt
+		case $yn in
+			[Yy]* ) installPrompt; break;;
+			[Nn]* ) noInstall; exit;;
+			* ) echo "Please answer Y/n";;
+		esac
+	done
+}
+
+# install needed programs
+xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme picom nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
+
+# Grabs the Dotfiles
+cd ~/
+mkdir -p .config
+git clone https://github.com/LinusTheDane/Dotfiles
+
+# Copy the files
+cp -r .config ~/
+cd .. && cp .zshrc .Xresources 
+
+# Set nvidia as default
+textPrompt="Do you wish to install discord? Y/n";
+function installPropt{cp .xinitrc-nvidia ~/.xinitrc};
+function noInstall{cp .xinitrc ~/.xinitrc};
+prompt
+
+# Discord install, as Void does not have Discord in the repos
+textPrompt="Do you wish to install discord? Y/n";
+function installPrompt{./discord};
+function noInstall{};
+prompt
+
+echo "Install done!";
+
