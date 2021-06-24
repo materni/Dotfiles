@@ -28,8 +28,8 @@ cd .. && cd HOME/ && cp .zshrc .Xresources ~/
 
 # Set nvidia as default
 textPrompt="Do you wish to install discord? Y/n";
-function installPropt{cp .xinitrc-nvidia ~/.xinitrc};
-function noInstall{cp .xinitrc ~/.xinitrc};
+function installPropt{cp HOME/.xinitrc-nvidia ~/.xinitrc};
+function noInstall{cp HOME/.xinitrc ~/.xinitrc};
 prompt
 
 # Discord install, as Void does not have Discord in the repos
