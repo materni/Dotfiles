@@ -27,8 +27,7 @@
 * Picom              - Compositor
 
 ### Install script
-For automated install use the install-script.
-It is not required to clone the repo for it to function, it will clone the repo.
+For automated install use the install-script.It is not required to clone the repo for it to function, it will clone the repo itself.
 
 ### One line install
 For Void Linux XBPS:
