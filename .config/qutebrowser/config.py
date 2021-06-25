@@ -21,8 +21,6 @@ config.bind('<Ctrl-Shift-o>', 'spawn --verbose --detach /home/maren/dotfiles/i3/
 
 config.bind('<Ctrl-Shift-d>', 'hint links spawn --verbose --detach mpv {hint-url} --input-ipc-server=/tmp/mpvsocket')
 
-config.bind('<Ctrl-o>', 'open -t')
-
 # Colors (Base16-default-dark)
 base00 = "#181818"
 base01 = "#282828"
