@@ -29,12 +29,6 @@
 ### Install script
 For automated install use the install-script.It is not required to clone the repo for it to function, it will clone the repo itself.
 
-### One line install
-For Void Linux XBPS:
-```sh
-xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst picocom krita acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme picom nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
-```
-
 ### Vim-plug
 For neovim:
 ```sh
