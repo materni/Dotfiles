@@ -15,7 +15,7 @@ function prompt {
 }
 
 # install needed programs
-xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme picom nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
+xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme picom nodejs nerd-fonts font-iosevka flatpak NetworkManager
 
 # Grabs the Dotfiles
 cd ~/
