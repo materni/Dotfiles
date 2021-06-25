@@ -40,14 +40,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Set nvidia as default
 textPrompt="Do you wish to install discord? Y/n";
-function installPrompt{cp ~/Dotfiles/home/.xinitrc-nvidia ~/.xinitrc};
-function noInstall{cp ~/Dotfiles/home/.xinitrc ~/.xinitrc};
+installPrompt (){cp ~/Dotfiles/home/.xinitrc-nvidia ~/.xinitrc}
+noInstall (){cp ~/Dotfiles/home/.xinitrc ~/.xinitrc}
 prompt
 
 # Discord install, as Void does not have Discord in the repos
 textPrompt="Do you wish to install discord? Y/n";
-function installPrompt{./discord-script};
-function noInstall{};
+installPrompt (){./discord-script}
+noInstall (){}
 prompt
 
 echo "Install done!";
