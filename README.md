@@ -35,6 +35,13 @@ For Void Linux XBPS:
 xbps-install -S xorg bspwm sxhkd zsh feh git mpv pfetch alacritty neovim rofi htop ranger zathura zathura-pdf-poppler qutebrowser pulseaudio bluez pulsemixer flameshot dunst picocom krita acpi void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree youtube-dl ueberzug python-pillow plata-theme papirus-icon-theme picom nodejs nerd-fonts font-iosevka flatpak curl NetworkManager
 ```
 
+### Vim-plug
+For neovim:
+```sh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 ### ZSH/oh-my-ZSH addons
 Install oh-my-zsh with curl:
 ```sh
@@ -51,9 +58,3 @@ Fish-like autosuggestions:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-### Vim-plug
-For neovim:
-```sh
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-```
