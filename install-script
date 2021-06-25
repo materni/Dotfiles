@@ -25,7 +25,7 @@ cd Dotfiles
 
 # Copy the files
 cd .config && cp -r * ~/.config
-cd .. && cd HOME/ && cp .zshrc .Xresources ~/
+cd ~/Dotfiles/home && cp .zshrc .Xresources ~/
 
 # Install oh-my-zsh and plugins
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -40,8 +40,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Set nvidia as default
 textPrompt="Do you wish to install discord? Y/n";
-function installPropt{cp HOME/.xinitrc-nvidia ~/.xinitrc};
-function noInstall{cp HOME/.xinitrc ~/.xinitrc};
+function installPropt{cp ~/Dotfiles/home/.xinitrc-nvidia ~/.xinitrc};
+function noInstall{cp ~/Dotfiles/home/.xinitrc ~/.xinitrc};
 prompt
 
 # Discord install, as Void does not have Discord in the repos
