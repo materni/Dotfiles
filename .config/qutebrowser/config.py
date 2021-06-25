@@ -1,6 +1,20 @@
-# mpv setup for YouTube
 config.load_autoconfig(False)
 
+# Set default search engine/startpage
+c.url.start_pages = 'www.google.com'
+c.url.searchengines = {
+    'DEFAULT':  'https://google.com/search?hl=en&q={}',
+    '!d':       'https://duckduckgo.com/?ia=web&q={}',
+    '!gh':      'https://github.com/search?o=desc&q={}&s=stars',
+    '!gist':    'https://gist.github.com/search?q={}',
+    '!gi':      'https://www.google.com/search?tbm=isch&q={}&tbs=imgo:1',
+    '!gn':      'https://news.google.com/search?q={}',
+    '!ig':      'https://www.instagram.com/explore/tags/{}',
+    '!m':       'https://www.google.com/maps/search/{}',
+    '!w':       'https://en.wikipedia.org/wiki/{}',
+    '!yt':      'https://www.youtube.com/results?search_query={}'
+}
+# mpv setup for YouTube
 config.bind('<Ctrl-Shift-p>', 'hint links spawn --verbose --detach /home/maren/dotfiles/i3/script/fillplaylist.sh push {hint-url}')
 
 config.bind('<Ctrl-Shift-o>', 'spawn --verbose --detach /home/maren/dotfiles/i3/script/fillplaylist.sh play')
