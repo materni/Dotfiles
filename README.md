@@ -20,6 +20,7 @@
 * Feh                - Image viewer/wallpaper
 * Pulseaudio         - Audio
 * Pulsemixer         - Audio control
+* brightnessctl      - Brightness control
 * Krita              - Drawing/photo-editing
 * ACPI               - Battery information
 * ZSH                - Shell
