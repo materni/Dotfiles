@@ -10,10 +10,6 @@ super + Return
 super +  space
     rofi -show drun -theme $HOME/.config/rofi/material.rasi
 
-# open qutebrowser
-super + q
-	qutebrowser
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
