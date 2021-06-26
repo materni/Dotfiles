@@ -14,17 +14,15 @@
 * Qutebrowser        - Browser
 * Opendoas           - Replacement for sudo
 * Flameshot          - Screenshot tool
-* Xorg	              - Xserver
+* Xorg	             - Xserver
 * Plata-theme        - GTK-theme
 * Papirus-icon-theme - Icon theme
 * Nerd-fonts         - Font
 * Feh                - Image viewer/wallpaper
-* Picocom            - Console program
 * Pulseaudio         - Audio
 * Pulsemixer         - Audio control
 * Krita              - Drawing/photo-editing
 * ACPI               - Battery information
-* Picom              - Compositor
 
 ### Install script
 For automated install use the install-script.It is not required to clone the repo for it to function, it will clone the repo itself.
