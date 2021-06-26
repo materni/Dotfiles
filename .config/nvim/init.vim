@@ -23,13 +23,9 @@ so ~/.config/nvim/barbar.vim
 so ~/.config/nvim/nvim-tree.vim
 
 " Colorscheme
-colorscheme base16-default-dark
+colorscheme gruvbox-material
 
 let g:lightline = {
-  \ 'colorscheme': 'base16',
+  \ 'colorscheme': 'gruvbox_material',
   \ }
 
-" Transparrency
-highlight Normal     ctermbg=NONE guibg=NONE
-highlight LineNr     ctermbg=NONE guibg=NONE
-highlight SignColumn ctermbg=NONE guibg=NONE

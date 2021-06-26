@@ -12,11 +12,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'sheerun/vim-polyglot'
   Plug 'jelera/vim-javascript-syntax'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'chriskempson/base16-vim'
-  Plug 'daviesjamie/vim-base16-lightline'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'
+  Plug 'sainnhe/gruvbox-material'
 
-  call plug#end()
+call plug#end()
 
