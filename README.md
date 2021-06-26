@@ -22,6 +22,7 @@
 * Pulsemixer         - Audio control
 * Krita              - Drawing/photo-editing
 * ACPI               - Battery information
+* ZSH                - Shell
 
 ### Install script
 For automated install use the install-script.It is not required to clone the repo for it to function, it will clone the repo itself.
