@@ -12,7 +12,6 @@
 * Ranger             - File manager
 * Zathura            - PDF Reader
 * Qutebrowser        - Browser
-* Opendoas           - Replacement for sudo
 * Flameshot          - Screenshot tool
 * Xorg	             - Xserver
 * Plata-theme        - GTK-theme
